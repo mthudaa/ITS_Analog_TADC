@@ -119,8 +119,8 @@ meas tran avg_pow  AVG pow_a from=1n to=535u
 meas tran avg_pow  AVG pow_d from=1n to=535u
 meas tran avg_pow  AVG pow_r from=1n to=535u
 remzerovec 
-write adc10b_tb_dynamic.raw  
-wrdata adc10b_tb_dynamic.txt out cko pow_a pow_d pow_r vip vin
+write adc8b_tb_dynamic.raw  
+wrdata adc8b_tb_dynamic.txt out cko pow_a pow_d pow_r vip vin
 quit 1
 .endc
 "}
@@ -130,7 +130,7 @@ C {devices/lab_wire.sym} 750 -220 2 1 {name=p24 sig_type=std_logic lab=VSSD}
 C {sky130_fd_pr/corner.sym} 40 -570 0 0 {name=CORNER only_toplevel=false corner=tt}
 C {devices/launcher.sym} 1380 -530 0 0 {name=h5
 descr="load waves" 
-tclcommand="xschem raw_read $netlist_dir/adc10b_tb_dynamic.raw tran"
+tclcommand="xschem raw_read $netlist_dir/adc8b_tb_dynamic.raw tran"
 }
 C {devices/res.sym} 60 -330 0 0 {name=R1
 value=50
