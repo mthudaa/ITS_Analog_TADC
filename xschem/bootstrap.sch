@@ -1,8 +1,9 @@
-v {xschem version=3.4.6 file_version=1.2}
+v {xschem version=3.4.8RC file_version=1.2}
 G {}
 K {}
 V {}
 S {}
+F {}
 E {}
 N 330 -310 330 -270 {
 lab=#net1}
@@ -212,7 +213,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/cap_mim_m3_1.sym} 510 -270 0 0 {name=C1 model=cap_mim_m3_1 W=4 L=4 MF=32 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 510 -270 0 0 {name=C1 model=cap_mim_m3_1 W=2 L=2 MF=32 spiceprefix=X}
 C {devices/lab_wire.sym} 390 -340 0 1 {name=p1 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 390 -240 0 1 {name=p2 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 570 -100 0 1 {name=p3 sig_type=std_logic lab=VSS}

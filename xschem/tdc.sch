@@ -35,3 +35,4 @@ C {devices/opin.sym} 90 -330 0 0 {name=p8 sig_type=std_logic lab=RDY}
 C {devices/lab_wire.sym} 540 -200 0 1 {name=p9 sig_type=std_logic lab=RDY}
 C {delay_gate_ori.sym} 390 -470 0 0 {name=x2}
 C {delay_gate_ori.sym} 390 -330 0 0 {name=x3}
+C {devices/code_shown.sym} 80 -120 0 0 {name=s1 only_toplevel=false value=".include /usr/local/share/pdk/sky130A/libs.ref/sky130_fd_sc_hs/spice/sky130_fd_sc_hs.spice"}

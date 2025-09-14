@@ -6,15 +6,15 @@ S {}
 F {}
 E {}
 B 2 2160 -480 2960 -80 {flags=graph
-y1=-1.248358
-y2=1.1426328
+y1=-1.7420388
+y2=3.1652399
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=-8.6674033e-07
-x2=4.8998912e-06
+x1=0
+x2=0.00030071577
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -60,8 +60,8 @@ autoload=0
 
 color=4
 node=out
-x1=-8.6674033e-07
-x2=4.8998912e-06
+x1=0
+x2=0.00030071577
 
 y1=-520
 y2=520}
@@ -87,7 +87,7 @@ C {devices/lab_wire.sym} 320 -350 0 0 {name=p15 sig_type=std_logic lab=VIP}
 C {devices/lab_wire.sym} 60 -360 0 0 {name=p16 sig_type=std_logic lab=VIN}
 C {devices/lab_wire.sym} 570 -400 0 0 {name=p18 sig_type=std_logic lab=VIP}
 C {devices/lab_wire.sym} 570 -380 0 0 {name=p19 sig_type=std_logic lab=VIN}
-C {devices/lab_wire.sym} 1140 -490 0 1 {name=p21 sig_type=std_logic lab=DOUT0}
+C {devices/lab_wire.sym} 1140 -560 0 1 {name=p21 sig_type=std_logic lab=DOUT0}
 C {devices/lab_wire.sym} 870 -540 0 1 {name=p22 sig_type=std_logic lab=CKO}
 C {devices/code.sym} 185 -565 0 0 {name=TT_MODELS
 only_toplevel=true
@@ -104,7 +104,7 @@ C {devices/code.sym} 345 -565 0 0 {name=s2 only_toplevel=false value="
 .option wnflag=0 bypass=1
 .options method=trap rawfile=binary
 .options solver=klu nomod
-Eout out 0 VALUE = \{ ((V(dout0)*128 + V(dout1)*64 + V(dout2)*32 + V(dout3)*16 + V(dout4)*8 + V(dout5)*4 + V(dout6)*2 + V(dout7)*1)/3.3) - 128 \}
+Eout out 0 VALUE = \{ ((V(dout0)*512 + V(dout1)*256 + V(dout2)*128 + V(dout3)*64 + V(dout4)*32 + V(dout5)*16 + V(dout6)*8 + V(dout7)*4 + V(dout8)*2 + V(dout9)*1)/3.3) - 512 \}
 Epowa pow_a 0 VALUE = \{ V(vdda)*(-i(vd1)) \}
 Epowd pow_d 0 VALUE = \{ V(vddd)*(-i(vd2)) \}
 Epowr pow_r 0 VALUE = \{ V(vddr)*(-i(vd)) \}
@@ -152,30 +152,30 @@ C {devices/lab_wire.sym} 570 -360 0 0 {name=p10 sig_type=std_logic lab=EN}
 C {devices/vsource.sym} 820 -130 0 0 {name=VDA2 value="PWL(0 0 10n 1.8)" savecurrent=false}
 C {devices/lab_wire.sym} 820 -100 2 1 {name=p11 sig_type=std_logic lab=VSSD}
 C {devices/lab_wire.sym} 820 -160 0 0 {name=p13 sig_type=std_logic lab=EN}
-C {devices/adc_bridge.sym} 1110 -490 0 0 {name=A1 adc_bridge_model= adc_buff}
-C {devices/adc_bridge.sym} 1110 -450 0 0 {name=A2 adc_bridge_model= adc_buff}
-C {devices/adc_bridge.sym} 1110 -410 0 0 {name=A3 adc_bridge_model= adc_buff}
-C {devices/adc_bridge.sym} 1110 -370 0 0 {name=A4 adc_bridge_model= adc_buff}
-C {devices/adc_bridge.sym} 1110 -330 0 0 {name=A5 adc_bridge_model= adc_buff}
-C {devices/adc_bridge.sym} 1110 -290 0 0 {name=A6 adc_bridge_model= adc_buff}
-C {devices/adc_bridge.sym} 1110 -250 0 0 {name=A7 adc_bridge_model= adc_buff}
-C {devices/adc_bridge.sym} 1110 -210 0 0 {name=A8 adc_bridge_model= adc_buff}
-C {devices/lab_wire.sym} 1140 -450 0 1 {name=p14 sig_type=std_logic lab=DOUT1}
-C {devices/lab_wire.sym} 1140 -410 0 1 {name=p17 sig_type=std_logic lab=DOUT2}
-C {devices/lab_wire.sym} 1140 -370 0 1 {name=p20 sig_type=std_logic lab=DOUT3}
-C {devices/lab_wire.sym} 1140 -330 0 1 {name=p25 sig_type=std_logic lab=DOUT4}
-C {devices/lab_wire.sym} 1140 -290 0 1 {name=p26 sig_type=std_logic lab=DOUT5}
-C {devices/lab_wire.sym} 1140 -250 0 1 {name=p27 sig_type=std_logic lab=DOUT6}
-C {devices/lab_wire.sym} 1140 -210 0 1 {name=p28 sig_type=std_logic lab=DOUT7}
-C {devices/lab_wire.sym} 1080 -490 0 0 {name=p31 sig_type=std_logic lab=bDOUT0}
-C {devices/lab_wire.sym} 1080 -450 0 0 {name=p32 sig_type=std_logic lab=bDOUT1}
-C {devices/lab_wire.sym} 1080 -410 0 0 {name=p33 sig_type=std_logic lab=bDOUT2}
-C {devices/lab_wire.sym} 1080 -370 0 0 {name=p34 sig_type=std_logic lab=bDOUT3}
-C {devices/lab_wire.sym} 1080 -330 0 0 {name=p35 sig_type=std_logic lab=bDOUT4}
-C {devices/lab_wire.sym} 1080 -290 0 0 {name=p36 sig_type=std_logic lab=bDOUT5}
-C {devices/lab_wire.sym} 1080 -250 0 0 {name=p37 sig_type=std_logic lab=bDOUT6}
-C {devices/lab_wire.sym} 1080 -210 0 0 {name=p38 sig_type=std_logic lab=bDOUT7}
-C {devices/lab_wire.sym} 870 -560 0 1 {name=p41 sig_type=std_logic lab=bDOUT[0..7]}
+C {devices/adc_bridge.sym} 1110 -560 0 0 {name=A1 adc_bridge_model= adc_buff}
+C {devices/adc_bridge.sym} 1110 -520 0 0 {name=A2 adc_bridge_model= adc_buff}
+C {devices/adc_bridge.sym} 1110 -480 0 0 {name=A3 adc_bridge_model= adc_buff}
+C {devices/adc_bridge.sym} 1110 -440 0 0 {name=A4 adc_bridge_model= adc_buff}
+C {devices/adc_bridge.sym} 1110 -400 0 0 {name=A5 adc_bridge_model= adc_buff}
+C {devices/adc_bridge.sym} 1110 -360 0 0 {name=A6 adc_bridge_model= adc_buff}
+C {devices/adc_bridge.sym} 1110 -320 0 0 {name=A7 adc_bridge_model= adc_buff}
+C {devices/adc_bridge.sym} 1110 -280 0 0 {name=A8 adc_bridge_model= adc_buff}
+C {devices/lab_wire.sym} 1140 -520 0 1 {name=p14 sig_type=std_logic lab=DOUT1}
+C {devices/lab_wire.sym} 1140 -480 0 1 {name=p17 sig_type=std_logic lab=DOUT2}
+C {devices/lab_wire.sym} 1140 -440 0 1 {name=p20 sig_type=std_logic lab=DOUT3}
+C {devices/lab_wire.sym} 1140 -400 0 1 {name=p25 sig_type=std_logic lab=DOUT4}
+C {devices/lab_wire.sym} 1140 -360 0 1 {name=p26 sig_type=std_logic lab=DOUT5}
+C {devices/lab_wire.sym} 1140 -320 0 1 {name=p27 sig_type=std_logic lab=DOUT6}
+C {devices/lab_wire.sym} 1140 -280 0 1 {name=p28 sig_type=std_logic lab=DOUT7}
+C {devices/lab_wire.sym} 1080 -560 0 0 {name=p31 sig_type=std_logic lab=bDOUT0}
+C {devices/lab_wire.sym} 1080 -520 0 0 {name=p32 sig_type=std_logic lab=bDOUT1}
+C {devices/lab_wire.sym} 1080 -480 0 0 {name=p33 sig_type=std_logic lab=bDOUT2}
+C {devices/lab_wire.sym} 1080 -440 0 0 {name=p34 sig_type=std_logic lab=bDOUT3}
+C {devices/lab_wire.sym} 1080 -400 0 0 {name=p35 sig_type=std_logic lab=bDOUT4}
+C {devices/lab_wire.sym} 1080 -360 0 0 {name=p36 sig_type=std_logic lab=bDOUT5}
+C {devices/lab_wire.sym} 1080 -320 0 0 {name=p37 sig_type=std_logic lab=bDOUT6}
+C {devices/lab_wire.sym} 1080 -280 0 0 {name=p38 sig_type=std_logic lab=bDOUT7}
+C {devices/lab_wire.sym} 870 -560 0 1 {name=p41 sig_type=std_logic lab=bDOUT[0..9]}
 C {devices/lab_wire.sym} 570 -500 0 0 {name=p42 sig_type=std_logic lab=VSSD}
 C {devices/lab_wire.sym} 570 -520 0 0 {name=p43 sig_type=std_logic lab=VDDD}
 C {devices/lab_wire.sym} 570 -460 0 0 {name=p44 sig_type=std_logic lab=VSSR}
@@ -192,3 +192,9 @@ C {devices/gnd.sym} 680 -100 0 0 {name=l3 lab=GND}
 C {devices/lab_wire.sym} 680 -160 0 0 {name=p49 sig_type=std_logic lab=VSSD}
 C {devices/lab_wire.sym} 680 -220 2 1 {name=p50 sig_type=std_logic lab=VSSD}
 C {devices/lab_wire.sym} 680 -280 0 0 {name=p51 sig_type=std_logic lab=VDDD}
+C {devices/adc_bridge.sym} 1110 -240 0 0 {name=A9 adc_bridge_model= adc_buff}
+C {devices/adc_bridge.sym} 1110 -200 0 0 {name=A10 adc_bridge_model= adc_buff}
+C {devices/lab_wire.sym} 1140 -240 0 1 {name=p29 sig_type=std_logic lab=DOUT8}
+C {devices/lab_wire.sym} 1140 -200 0 1 {name=p30 sig_type=std_logic lab=DOUT9}
+C {devices/lab_wire.sym} 1080 -240 0 0 {name=p39 sig_type=std_logic lab=bDOUT8}
+C {devices/lab_wire.sym} 1080 -200 0 0 {name=p40 sig_type=std_logic lab=bDOUT9}

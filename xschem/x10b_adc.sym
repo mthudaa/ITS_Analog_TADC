@@ -39,9 +39,9 @@ T {VINN} -125 76 0 0 0.2 0.2 {}
 B 5 -152.5 97.5 -147.5 102.5 {name=EN sig_type=std_logic dir=in}
 L 4 -150 100 -130 100 {}
 T {EN} -125 96 0 0 0.2 0.2 {}
-B 5 147.5 -102.5 152.5 -97.5 {name=DATA[0:7] sig_type=std_logic dir=out}
+B 5 147.5 -102.5 152.5 -97.5 {name=DATA[0:9] sig_type=std_logic dir=out}
 L 4 130 -100 150 -100 {}
-T {DATA[0:7]} 125 -104 0 1 0.2 0.2 {}
+T {DATA[0:9]} 125 -104 0 1 0.2 0.2 {}
 B 5 147.5 -82.5 152.5 -77.5 {name=CKO sig_type=std_logic dir=out}
 L 4 130 -80 150 -80 {}
 T {CKO} 125 -84 0 1 0.2 0.2 {}
