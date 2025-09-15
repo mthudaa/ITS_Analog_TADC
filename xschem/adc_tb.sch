@@ -6,15 +6,15 @@ S {}
 F {}
 E {}
 B 2 2160 -480 2960 -80 {flags=graph
-y1=-1.7420388
-y2=3.1652399
-ypos1=0.14716805
-ypos2=5.8960686
+y1=0.23777238
+y2=1.8766891
+ypos1=-0.71545876
+ypos2=2.1572586
 divy=5
 subdivy=1
 unity=1
-x1=-9.2347676e-06
-x2=3.2412006e-05
+x1=0
+x2=5.9162546e-06
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -30,18 +30,10 @@ logy=0
 hilight_wave=0
 
 
-color="4 5 6 7 8 9 10 11 12 13"
-node="cko
-x1.cf[8]
-x1.cf[7]
-x1.cf[6]
-x1.cf[5]
-x1.cf[4]
-x1.cf[3]
-x1.cf[2]
-x1.cf[1]
-x1.cf[0]"
-digital=1}
+digital=0
+color="4 5"
+node="x1.vcp
+x1.vcn"}
 B 2 1320 -480 2120 -80 {flags=graph
 
 
@@ -70,7 +62,7 @@ autoload=0
 color=4
 node=out
 x1=0
-x2=0.00030071577
+x2=5.9162546e-06
 
 y1=-520
 y2=520}
@@ -86,7 +78,7 @@ C {devices/vsource.sym} 320 -260 0 0 {name=VSS2 value="SIN(0 0.9 19343.449519230
 C {devices/vsource.sym} 180 -180 0 0 {name=VSS3 value=0.9 savecurrent=false}
 C {devices/lab_wire.sym} 320 -350 0 0 {name=p15 sig_type=std_logic lab=VIP}
 C {devices/lab_wire.sym} 60 -360 0 0 {name=p16 sig_type=std_logic lab=VIN}
-C {devices/lab_wire.sym} 570 -470 0 0 {name=p18 sig_type=std_logic lab="VCM,VIP,VIN"}
+C {devices/lab_wire.sym} 570 -510 0 0 {name=p18 sig_type=std_logic lab="VCM,VIP,VIN"}
 C {devices/lab_wire.sym} 1140 -560 0 1 {name=p21 sig_type=std_logic lab=DOUT0}
 C {devices/code.sym} 185 -565 0 0 {name=TT_MODELS
 only_toplevel=true
@@ -141,7 +133,7 @@ C {devices/lab_wire.sym} 180 -150 2 1 {name=p3 sig_type=std_logic lab=VSS}
 C {devices/vsource.sym} 750 -130 0 0 {name=VC value=0.9 savecurrent=false}
 C {devices/lab_wire.sym} 750 -100 2 1 {name=p5 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 750 -160 0 0 {name=p9 sig_type=std_logic lab=VCM}
-C {devices/lab_wire.sym} 570 -510 0 0 {name=p10 sig_type=std_logic lab=EN}
+C {devices/lab_wire.sym} 570 -490 0 0 {name=p10 sig_type=std_logic lab=EN}
 C {devices/vsource.sym} 820 -130 0 0 {name=VDA2 value="PWL(0 0 10n 1.8)" savecurrent=false}
 C {devices/lab_wire.sym} 820 -100 2 1 {name=p11 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 820 -160 0 0 {name=p13 sig_type=std_logic lab=EN}
@@ -168,7 +160,7 @@ C {devices/lab_wire.sym} 1080 -400 0 0 {name=p35 sig_type=std_logic lab=bDOUT4}
 C {devices/lab_wire.sym} 1080 -360 0 0 {name=p36 sig_type=std_logic lab=bDOUT5}
 C {devices/lab_wire.sym} 1080 -320 0 0 {name=p37 sig_type=std_logic lab=bDOUT6}
 C {devices/lab_wire.sym} 1080 -280 0 0 {name=p38 sig_type=std_logic lab=bDOUT7}
-C {devices/lab_wire.sym} 870 -550 0 1 {name=p41 sig_type=std_logic lab=bDOUT[0..7]}
+C {devices/lab_wire.sym} 870 -570 0 1 {name=p41 sig_type=std_logic lab="CKO,bDOUT[8..2]"}
 C {devices/vsource.sym} 680 -130 0 0 {name=VS2 value=0 savecurrent=false}
 C {devices/vsource.sym} 680 -250 0 0 {name=VD value=1.8 savecurrent=false}
 C {devices/gnd.sym} 680 -100 0 0 {name=l3 lab=GND}
@@ -180,9 +172,5 @@ C {devices/lab_wire.sym} 1140 -240 0 1 {name=p29 sig_type=std_logic lab=DOUT8}
 C {devices/lab_wire.sym} 1080 -240 0 0 {name=p39 sig_type=std_logic lab=bDOUT8}
 C {lab_wire.sym} 570 -570 0 0 {name=p6 lab=VDD}
 C {lab_wire.sym} 570 -550 0 0 {name=p8 lab=VSS}
-C {tt_um_9b_tadc.sym} 720 -500 0 0 {name=x1}
-C {devices/lab_wire.sym} 870 -530 0 1 {name=p1 sig_type=std_logic lab="bDOUT8,CKO"}
-C {devices/noconn.sym} 570 -490 0 0 {name=l1}
-C {devices/noconn.sym} 870 -570 0 1 {name=l5[0:8]}
-C {devices/noconn.sym} 570 -450 0 0 {name=l1[0:8]}
-C {devices/noconn.sym} 570 -430 0 0 {name=l2[0:8]}
+C {devices/lab_wire.sym} 870 -550 0 1 {name=p1 sig_type=std_logic lab="bDOUT[1..0]"}
+C {tt_um_tsar_adc_pex.sym} 720 -530 0 0 {name=x1}

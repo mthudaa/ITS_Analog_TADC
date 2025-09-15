@@ -25,7 +25,7 @@ project:
 # This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
 pinout:
   # Inputs
-  ui[0]: ""
+  ui[0]: "EN"
   ui[1]: ""
   ui[2]: ""
   ui[3]: ""
@@ -35,18 +35,18 @@ pinout:
   ui[7]: ""
 
   # Outputs
-  uo[0]: ""
-  uo[1]: ""
-  uo[2]: ""
-  uo[3]: ""
-  uo[4]: ""
-  uo[5]: ""
-  uo[6]: ""
-  uo[7]: ""
+  uo[0]: "CKO"
+  uo[1]: "DATA[8]"
+  uo[2]: "DATA[7]"
+  uo[3]: "DATA[6]"
+  uo[4]: "DATA[5]"
+  uo[5]: "DATA[4]"
+  uo[6]: "DATA[3]"
+  uo[7]: "DATA[2]"
 
   # Bidirectional pins
-  uio[0]: ""
-  uio[1]: ""
+  uio[0]: "DATA[1]"
+  uio[1]: "DATA[0]"
   uio[2]: ""
   uio[3]: ""
   uio[4]: ""
@@ -55,11 +55,11 @@ pinout:
   uio[7]: ""
 
   # Analog pins - make sure to also set "analog_pins" above, else the pins won't be connected
-  ua[0]: ""
+  ua[0]: "VCM"
   ua[1]: ""
   ua[2]: ""
-  ua[3]: ""
-  ua[4]: ""
+  ua[3]: "VIN"
+  ua[4]: "VIP"
   ua[5]: ""
 
 # Do not change!
