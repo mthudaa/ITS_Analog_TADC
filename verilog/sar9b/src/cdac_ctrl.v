@@ -20,12 +20,12 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 module cdac_ctrl (
-    input wire [9:0] CF,
+    input wire [8:0] CF,
     input wire CKSB,
     input wire CMP_P,
     input wire CMP_N,
-    output reg [9:0] SWP,
-    output reg [9:0] SWN
+    output reg [8:0] SWP,
+    output reg [8:0] SWN
 );
     
     always @(posedge CF[0] or negedge CKSB) begin
@@ -91,12 +91,6 @@ module cdac_ctrl (
             SWP[8] <= CMP_P;
     end
     
-    always @(posedge CF[9] or negedge CKSB) begin
-        if (!CKSB)
-            SWP[9] <= 1'b0;
-        else
-            SWP[9] <= CMP_P;
-    end
     
     always @(posedge CF[0] or negedge CKSB) begin
         if (!CKSB)
@@ -159,12 +153,5 @@ module cdac_ctrl (
             SWN[8] <= 1'b0;
         else
             SWN[8] <= CMP_N;
-    end
-    
-    always @(posedge CF[9] or negedge CKSB) begin
-        if (!CKSB)
-            SWN[9] <= 1'b0;
-        else
-            SWN[9] <= CMP_N;
     end
 endmodule

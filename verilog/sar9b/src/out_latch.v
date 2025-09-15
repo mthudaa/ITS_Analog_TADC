@@ -24,14 +24,14 @@ module out_latch(
     input FINAL,
     input EN,
     input CKS,
-    input [0:9] SWP,
+    input [0:8] SWP,
     output CKO,
-    output reg [0:9] DATA
+    output reg [0:8] DATA
     );
     
     always @(posedge FINAL or negedge EN) begin
         if (!EN)
-            DATA <= 10'b0;
+            DATA <= 9'b0;
         else
             DATA <= SWP; // Menyimpan nilai SWP ke DOUT pada CK
     end

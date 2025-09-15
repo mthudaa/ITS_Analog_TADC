@@ -24,15 +24,15 @@ module cyclic_flag(
     input RDY,
     input CKS,
     output FINAL,
-    output [0:9] CF
+    output [0:8] CF
     );
-    reg [10:0] CF_BUF;
+    reg [9:0] CF_BUF;
     always @(posedge RDY or negedge CKS) begin
         if (!CKS)
-            CF_BUF <= 10'b0;
+            CF_BUF <= 9'b0;
         else
-            CF_BUF <= {CF_BUF[10:0], CKS}; // Shift register dengan input EN
+            CF_BUF <= {CF_BUF[9:0], CKS}; // Shift register dengan input EN
     end
-    assign CF = {CF_BUF[0], CF_BUF[1], CF_BUF[2], CF_BUF[3], CF_BUF[4], CF_BUF[5], CF_BUF[6], CF_BUF[7], CF_BUF[8], CF_BUF[9]};
-    assign FINAL = CF_BUF[10];
+    assign CF = {CF_BUF[0], CF_BUF[1], CF_BUF[2], CF_BUF[3], CF_BUF[4], CF_BUF[5], CF_BUF[6], CF_BUF[7], CF_BUF[8]};
+    assign FINAL = CF_BUF[9];
 endmodule

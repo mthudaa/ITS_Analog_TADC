@@ -3,7 +3,7 @@ G {}
 K {type=subcircuit
 format="@name @pinlist @symname"
 template="name=x1"
-spice_sym_def=".include /home/huda/ITS_Analog_10b_TADC/verilog/sar10b/runs/RUN_2025.09.08_18.38.51/results/final/spi/lvs/sar10b.spice"
+spice_sym_def=".include /home/huda/ITS_Analog_10b_TADC/verilog/sar9b/runs/RUN_2025.09.15_04.45.52/results/final/spi/lvs/sar9b.spice"
 }
 V {}
 S {}
@@ -35,10 +35,10 @@ B 5 -152.5 37.5 -147.5 42.5 {name=CMP_N sig_type=std_logic dir=in}
 B 5 -152.5 57.5 -147.5 62.5 {name=EN sig_type=std_logic dir=in}
 B 5 147.5 -62.5 152.5 -57.5 {name=CKS sig_type=std_logic dir=out}
 B 5 147.5 -42.5 152.5 -37.5 {name=CKSB sig_type=std_logic dir=out}
-B 5 147.5 -22.5 152.5 -17.5 {name=CF[0:9] sig_type=std_logic dir=out}
-B 5 147.5 -2.5 152.5 2.5 {name=SWP[0:9] sig_type=std_logic dir=out}
-B 5 147.5 17.5 152.5 22.5 {name=SWN[0:9] sig_type=std_logic dir=out}
-B 5 147.5 37.5 152.5 42.5 {name=DATA[0:9] sig_type=std_logic dir=out}
+B 5 147.5 -22.5 152.5 -17.5 {name=CF[0:8] sig_type=std_logic dir=out}
+B 5 147.5 -2.5 152.5 2.5 {name=SWP[0:8] sig_type=std_logic dir=out}
+B 5 147.5 17.5 152.5 22.5 {name=SWN[0:8] sig_type=std_logic dir=out}
+B 5 147.5 37.5 152.5 42.5 {name=DATA[0:8] sig_type=std_logic dir=out}
 B 5 147.5 57.5 152.5 62.5 {name=CKO sig_type=std_logic dir=out}
 T {@symname} -85.5 -6 0 0 0.3 0.3 {}
 T {@name} 135 -82 0 0 0.2 0.2 {}
@@ -51,8 +51,8 @@ T {CMP_N} -125 36 0 0 0.2 0.2 {}
 T {EN} -125 56 0 0 0.2 0.2 {}
 T {CKS} 125 -64 0 1 0.2 0.2 {}
 T {CKSB} 125 -44 0 1 0.2 0.2 {}
-T {CF[0:9]} 125 -24 0 1 0.2 0.2 {}
-T {SWP[0:9]} 125 -4 0 1 0.2 0.2 {}
-T {SWN[0:9]} 125 16 0 1 0.2 0.2 {}
-T {DATA[0:9]} 125 36 0 1 0.2 0.2 {}
+T {CF[0:8]} 125 -24 0 1 0.2 0.2 {}
+T {SWP[0:8]} 125 -4 0 1 0.2 0.2 {}
+T {SWN[0:8]} 125 16 0 1 0.2 0.2 {}
+T {DATA[0:8]} 125 36 0 1 0.2 0.2 {}
 T {CKO} 125 56 0 1 0.2 0.2 {}

@@ -1,11 +1,11 @@
 {
     "//": "Basics",
-    "DESIGN_NAME": "sar10b",
+    "DESIGN_NAME": "sar9b",
     "VERILOG_FILES": "dir::src/*.v",
     "CLOCK_PERIOD": 10,
     "CLOCK_PORT": "CLK",
-    "PNR_SDC_FILE": "dir::src/sar10b.sdc",
-    "SIGNOFF_SDC_FILE": "dir::src/sar10b.sdc",
+    "PNR_SDC_FILE": "dir::src/sar9b.sdc",
+    "SIGNOFF_SDC_FILE": "dir::src/sar9b.sdc",
     "//": "PDN",
     "FP_PDN_VOFFSET": 5,
     "FP_PDN_HOFFSET": 5,
@@ -15,14 +15,14 @@
     "FP_PDN_HPITCH": 30,
     "FP_PDN_SKIPTRIM": true,
     "DESIGN_IS_CORE": false,
-    "FP_ASPECT_RATIO": 1.0,
+    "FP_ASPECT_RATIO": 1.00,
     "FP_SIZING": "absolute",
-    "FP_SIZING": "0 0 30 30",
+    "FP_SIZING": "0 0 50 50",
     "//": "Pin Order",
     "FP_PIN_ORDER_CFG": "dir::pin_order.cfg",
     "//": "Technology-Specific Configs",
     "pdk::sky130*": {
-        "FP_CORE_UTIL": 35,
+        "FP_CORE_UTIL": 50,
         "CLOCK_PERIOD": 10,
         "scl::sky130_fd_sc_hs": {
             "CLOCK_PERIOD": 8

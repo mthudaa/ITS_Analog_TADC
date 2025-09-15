@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1750100919
+timestamp 1757893939
 << metal1 >>
 rect -224 2974 5424 2996
 rect -224 2922 -192 2974
@@ -179,17 +179,17 @@ rect 5318 -614 5340 -562
 rect 5392 -614 5414 -562
 rect 5318 -646 5414 -614
 use delay_gate_ori  delay_gate_ori_0
-timestamp 1750100919
+timestamp 1757893504
 transform 1 0 1371 0 -1 2130
 box -875 -482 853 998
 use delay_gate_ori  delay_gate_ori_1
-timestamp 1750100919
+timestamp 1757893504
 transform 1 0 1371 0 1 230
 box -875 -482 853 998
 use phase_detector  phase_detector_0
-timestamp 1750100919
+timestamp 1757893939
 transform 1 0 2324 0 1 -47
-box -62 -2 2803 2456
+box -28 -2 2706 2456
 << labels >>
 flabel metal1 s 412 2934 442 2964 0 FreeSans 500 0 0 0 VDD
 port 1 nsew

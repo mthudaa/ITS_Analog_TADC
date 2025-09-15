@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1757827688
+timestamp 1757893939
 << metal1 >>
 rect 1421 2274 3012 2574
 rect 4372 2264 4672 2564
@@ -94,16 +94,6 @@ rect -519 -38280 -69 -38256
 rect -519 -38332 -155 -38280
 rect -103 -38332 -69 -38280
 rect -519 -38356 -69 -38332
-rect 2277 -40944 3012 -40644
-rect 4232 -40954 4532 -40654
-rect -519 -42882 -269 -42858
-rect -519 -42934 -355 -42882
-rect -303 -42934 -269 -42882
-rect -519 -42958 -269 -42934
-rect -519 -43082 -69 -43058
-rect -519 -43134 -155 -43082
-rect -103 -43134 -69 -43082
-rect -519 -43158 -69 -43134
 << via1 >>
 rect -355 284 -303 336
 rect -155 84 -103 136
@@ -123,8 +113,6 @@ rect -355 -33330 -303 -33278
 rect -155 -33530 -103 -33478
 rect -355 -38132 -303 -38080
 rect -155 -38332 -103 -38280
-rect -355 -42934 -303 -42882
-rect -155 -43134 -103 -43082
 << metal2 >>
 rect -379 336 -279 370
 rect -379 284 -355 336
@@ -195,59 +183,47 @@ rect -379 -38132 -355 -38080
 rect -303 -38132 -279 -38080
 rect -379 -38166 -279 -38132
 rect -179 -38280 -79 -38246
+rect 21 -38269 121 4462
+rect 1021 -38269 1121 4728
+rect 1221 -38269 1321 4634
 rect -179 -38332 -155 -38280
 rect -103 -38332 -79 -38280
 rect -179 -38366 -79 -38332
-rect -379 -42882 -279 -42848
-rect 21 -42880 121 4462
-rect -379 -42934 -355 -42882
-rect -303 -42934 -279 -42882
-rect 1021 -42907 1121 4728
-rect 1221 -42872 1321 4634
-rect -379 -42968 -279 -42934
-rect -179 -43082 -79 -43048
-rect -179 -43134 -155 -43082
-rect -103 -43134 -79 -43082
-rect -179 -43168 -79 -43134
 use cdac_sw_3  cdac_sw_3_0
-timestamp 1757354611
+timestamp 1757893939
 transform 1 0 1439 0 1 -6272
 box -1828 -3272 3610 1410
 use cdac_sw_3  cdac_sw_3_1
-timestamp 1757354611
+timestamp 1757893939
 transform 1 0 1439 0 1 -1480
 box -1828 -3272 3610 1410
 use cdac_sw_3  cdac_sw_3_2
-timestamp 1757354611
+timestamp 1757893939
 transform 1 0 1439 0 1 3322
 box -1828 -3272 3610 1410
 use cdac_sw_3  cdac_sw_3_3
-timestamp 1757354611
+timestamp 1757893939
 transform 1 0 1439 0 1 -15886
 box -1828 -3272 3610 1410
 use cdac_sw_3  cdac_sw_3_4
-timestamp 1757354611
+timestamp 1757893939
 transform 1 0 1439 0 1 -11083
 box -1828 -3272 3610 1410
 use cdac_sw_3  cdac_sw_3_5
-timestamp 1757354611
+timestamp 1757893939
 transform 1 0 1439 0 1 -20688
 box -1828 -3272 3610 1410
 use cdac_sw_3  cdac_sw_3_6
-timestamp 1757354611
+timestamp 1757893939
 transform 1 0 1439 0 1 -25490
 box -1828 -3272 3610 1410
 use cdac_sw_3  cdac_sw_3_7
-timestamp 1757354611
+timestamp 1757893939
 transform 1 0 1439 0 1 -30292
 box -1828 -3272 3610 1410
 use cdac_sw_3  cdac_sw_3_8
-timestamp 1757354611
+timestamp 1757893939
 transform 1 0 1439 0 1 -35094
-box -1828 -3272 3610 1410
-use cdac_sw_3  cdac_sw_3_9
-timestamp 1757354611
-transform 1 0 1439 0 1 -39896
 box -1828 -3272 3610 1410
 << labels >>
 flabel metal2 s 1052 4651 1092 4691 0 FreeSans 1000 0 0 0 VDD
@@ -274,8 +250,6 @@ flabel metal1 s -497 -33321 -457 -33281 0 FreeSans 1000 0 0 0 SW_IN[7]
 port 11 nsew
 flabel metal1 s -496 -38127 -456 -38087 0 FreeSans 1000 0 0 0 SW_IN[8]
 port 12 nsew
-flabel metal1 s -492 -42927 -452 -42887 0 FreeSans 1000 0 0 0 SW_IN[9]
-port 13 nsew
 flabel metal1 s -496 88 -456 128 0 FreeSans 1000 0 0 0 CF[0]
 port 14 nsew
 flabel metal1 s -497 -4710 -457 -4670 0 FreeSans 1000 0 0 0 CF[1]
@@ -294,8 +268,6 @@ flabel metal1 s -497 -33525 -457 -33485 0 FreeSans 1000 0 0 0 CF[7]
 port 21 nsew
 flabel metal1 s -495 -38323 -455 -38283 0 FreeSans 1000 0 0 0 CF[8]
 port 22 nsew
-flabel metal1 s -500 -43131 -460 -43091 0 FreeSans 1000 0 0 0 CF[9]
-port 23 nsew
 flabel metal1 4372 2264 4672 2564 0 FreeSans 1600 0 0 0 S[0]
 port 24 nsew
 flabel metal1 4320 -2538 4620 -2238 0 FreeSans 1600 0 0 0 S[1]
@@ -314,6 +286,4 @@ flabel metal1 4218 -31350 4518 -31050 0 FreeSans 1600 0 0 0 S[7]
 port 31 nsew
 flabel metal1 4232 -36152 4532 -35852 0 FreeSans 1600 0 0 0 S[8]
 port 32 nsew
-flabel metal1 4232 -40954 4532 -40654 0 FreeSans 1600 0 0 0 S[9]
-port 34 nsew
 << end >>

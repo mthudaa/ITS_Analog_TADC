@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module sar10b(
+module sar9b(
     input EN,
     input CLK,
     input RDY,
@@ -28,10 +28,10 @@ module sar10b(
     input CMP_N,
     output CKS,
     output CKSB,
-    output [0:9] CF,
-    output [0:9] SWP,
-    output [0:9] SWN,
-    output [0:9] DATA,
+    output [0:8] CF,
+    output [0:8] SWP,
+    output [0:8] SWN,
+    output [0:8] DATA,
     output CKO
     );
     wire FINAL;
