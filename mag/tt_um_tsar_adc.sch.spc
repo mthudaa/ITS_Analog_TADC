@@ -1,8 +1,8 @@
 ** sch_path: /home/huda/ITS_Analog_10b_TADC/xschem/tt_um_tsar_adc.sch
 .subckt tt_um_tsar_adc VDPWR VGND clk uo_out[0] uo_out[1] uo_out[2] uo_out[3] uo_out[4] uo_out[5] uo_out[6] uo_out[7] uio_out[0]
-+ uio_out[1] ua[0] ua[4] ua[3] ui_in[0]
-*.PININFO VDPWR:I VGND:I clk:I uo_out[0:7]:O uio_out[0:1]:B ui_in[0]:I ua[0],ua[4],ua[3]:I
-x3 VDPWR VGND CKS CKSB ua[4] ua[3] VCP VCN th_dif_sw
++ uio_out[1] ua[0] ua[2] ua[1] ui_in[0]
+*.PININFO VDPWR:I VGND:I clk:I uo_out[0:7]:O uio_out[0:1]:B ui_in[0]:I ua[0],ua[2],ua[1]:I
+x3 VDPWR VGND CKS CKSB ua[2] ua[1] VCP VCN th_dif_sw
 x1 clk VDPWR VGND VCP VCN CMP_P CMP_N RDY tdc
 x4 CF[0] CF[1] CF[2] CF[3] CF[4] CF[5] CF[6] CF[7] CF[8] uo_out[0] CKS CKSB clk CMP_N CMP_P uio_out[1] uio_out[0] uo_out[7]
 + uo_out[6] uo_out[5] uo_out[4] uo_out[3] uo_out[2] uo_out[1] ui_in[0] RDY SWN[0] SWN[1] SWN[2] SWN[3] SWN[4] SWN[5] SWN[6] SWN[7] SWN[8]

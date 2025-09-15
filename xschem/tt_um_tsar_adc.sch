@@ -19,8 +19,8 @@ C {devices/lab_wire.sym} 510 -140 0 0 {name=p28 sig_type=std_logic lab=CMP_P}
 C {devices/lab_wire.sym} 510 -120 0 0 {name=p29 sig_type=std_logic lab=CMP_N}
 C {devices/lab_wire.sym} 810 -500 0 1 {name=p4 sig_type=std_logic lab=CMP_P}
 C {devices/lab_wire.sym} 810 -480 0 1 {name=p5 sig_type=std_logic lab=CMP_N}
-C {devices/lab_wire.sym} 510 -290 0 0 {name=p6 sig_type=std_logic lab=ua[4]}
-C {devices/lab_wire.sym} 510 -270 0 0 {name=p8 sig_type=std_logic lab=ua[3]}
+C {devices/lab_wire.sym} 510 -290 0 0 {name=p6 sig_type=std_logic lab=ua[2]}
+C {devices/lab_wire.sym} 510 -270 0 0 {name=p8 sig_type=std_logic lab=ua[1]}
 C {devices/lab_wire.sym} 810 -370 0 1 {name=p10 sig_type=std_logic lab=VCP}
 C {devices/lab_wire.sym} 810 -350 0 1 {name=p11 sig_type=std_logic lab=VCN}
 C {devices/lab_wire.sym} 510 -440 0 0 {name=p14 sig_type=std_logic lab=VCP}
@@ -55,7 +55,7 @@ C {devices/ipin.sym} 180 -520 0 0 {name=p0 lab=clk}
 C {devices/opin.sym} 280 -500 0 0 {name=p88 lab=uo_out[0:7]}
 C {devices/iopin.sym} 280 -480 0 0 {name=p89 lab=uio_out[0:1]}
 C {devices/ipin.sym} 180 -440 0 0 {name=p99 lab=ui_in[0]}
-C {devices/ipin.sym} 180 -460 0 0 {name=p101 lab=ua[0],ua[4],ua[3]}
+C {devices/ipin.sym} 180 -460 0 0 {name=p101 lab=ua[0],ua[2],ua[1]}
 C {lab_wire.sym} 940 -640 0 0 {name=p35 lab=VDPWR}
 C {lab_wire.sym} 940 -560 0 0 {name=p37 lab=VGND}
 C {lab_wire.sym} 940 -580 0 0 {name=p40 lab=ua[0]}

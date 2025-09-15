@@ -1,0 +1,460 @@
+timestamp 1757961500
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use th_dif_sw th_dif_sw_0 -1 0 31942 0 -1 7509
+use tdc tdc_0 0 -1 17291 1 0 8455
+use single_9b_cdac single_9b_cdac_1 -1 0 64504 0 -1 -16228
+use single_9b_cdac single_9b_cdac_0 -1 0 64504 0 1 61688
+use sar9b sar9b_0 1 0 888 0 1 14072
+port "ua[3]" 6 18770 0 18950 200 m4
+port "ua[3]" 6 18770 0 18950 200 m4
+port "ua[4]" 7 14906 0 15086 200 m4
+port "ua[4]" 7 14906 0 15086 200 m4
+port "ua[5]" 8 11042 0 11222 200 m4
+port "ua[5]" 8 11042 0 11222 200 m4
+port "ua[6]" 9 7178 0 7358 200 m4
+port "ua[6]" 9 7178 0 7358 200 m4
+port "ua[7]" 10 3314 0 3494 200 m4
+port "ua[7]" 10 3314 0 3494 200 m4
+port "ena" 1 29318 44952 29378 45152 m4
+port "ena" 1 29318 44952 29378 45152 m4
+port "rst_n" 2 28214 44952 28274 45152 m4
+port "rst_n" 2 28214 44952 28274 45152 m4
+port "ui_in[1]" 12 27110 44952 27170 45152 m4
+port "ui_in[1]" 12 27110 44952 27170 45152 m4
+port "ui_in[2]" 13 26558 44952 26618 45152 m4
+port "ui_in[2]" 13 26558 44952 26618 45152 m4
+port "ui_in[3]" 14 26006 44952 26066 45152 m4
+port "ui_in[3]" 14 26006 44952 26066 45152 m4
+port "ui_in[4]" 15 25454 44952 25514 45152 m4
+port "ui_in[4]" 15 25454 44952 25514 45152 m4
+port "ui_in[5]" 16 24902 44952 24962 45152 m4
+port "ui_in[5]" 16 24902 44952 24962 45152 m4
+port "ui_in[6]" 17 24350 44952 24410 45152 m4
+port "ui_in[6]" 17 24350 44952 24410 45152 m4
+port "ui_in[7]" 18 23798 44952 23858 45152 m4
+port "ui_in[7]" 18 23798 44952 23858 45152 m4
+port "uio_in[0]" 19 23246 44952 23306 45152 m4
+port "uio_in[0]" 19 23246 44952 23306 45152 m4
+port "uio_in[1]" 20 22694 44952 22754 45152 m4
+port "uio_in[1]" 20 22694 44952 22754 45152 m4
+port "uio_in[2]" 21 22142 44952 22202 45152 m4
+port "uio_in[2]" 21 22142 44952 22202 45152 m4
+port "uio_in[3]" 22 21590 44952 21650 45152 m4
+port "uio_in[3]" 22 21590 44952 21650 45152 m4
+port "uio_in[4]" 23 21038 44952 21098 45152 m4
+port "uio_in[4]" 23 21038 44952 21098 45152 m4
+port "uio_in[5]" 24 20486 44952 20546 45152 m4
+port "uio_in[5]" 24 20486 44952 20546 45152 m4
+port "uio_in[6]" 25 19934 44952 19994 45152 m4
+port "uio_in[6]" 25 19934 44952 19994 45152 m4
+port "uio_in[7]" 26 19382 44952 19442 45152 m4
+port "uio_in[7]" 26 19382 44952 19442 45152 m4
+port "ua[1]" 4 26498 0 26678 200 m4
+port "ua[1]" 4 26498 0 26678 200 m4
+port "ua[2]" 5 22634 0 22814 200 m4
+port "ua[2]" 5 22634 0 22814 200 m4
+port "clk" 0 28766 44952 28826 45152 m4
+port "clk" 0 28766 44952 28826 45152 m4
+port "uo_out[0]" 43 18830 44952 18890 45152 m4
+port "uo_out[0]" 43 18830 44952 18890 45152 m4
+port "uo_out[1]" 44 18278 44952 18338 45152 m4
+port "uo_out[1]" 44 18278 44952 18338 45152 m4
+port "uo_out[2]" 45 17726 44952 17786 45152 m4
+port "uo_out[2]" 45 17726 44952 17786 45152 m4
+port "uo_out[3]" 46 17174 44952 17234 45152 m4
+port "uo_out[3]" 46 17174 44952 17234 45152 m4
+port "uo_out[4]" 47 16622 44952 16682 45152 m4
+port "uo_out[4]" 47 16622 44952 16682 45152 m4
+port "uo_out[5]" 48 16070 44952 16130 45152 m4
+port "uo_out[5]" 48 16070 44952 16130 45152 m4
+port "uo_out[6]" 49 15518 44952 15578 45152 m4
+port "uo_out[6]" 49 15518 44952 15578 45152 m4
+port "uo_out[7]" 50 14966 44952 15026 45152 m4
+port "uo_out[7]" 50 14966 44952 15026 45152 m4
+port "uio_out[0]" 35 14414 44952 14474 45152 m4
+port "uio_out[0]" 35 14414 44952 14474 45152 m4
+port "uio_out[1]" 36 13862 44952 13922 45152 m4
+port "uio_out[1]" 36 13862 44952 13922 45152 m4
+port "ui_in[0]" 11 27662 44952 27722 45152 m4
+port "ui_in[0]" 11 27662 44952 27722 45152 m4
+port "VDPWR" 51 200 1000 600 44152 m4
+port "uio_oe[1]" 28 9446 44952 9506 45152 m4
+port "uio_oe[0]" 27 9998 44952 10058 45152 m4
+port "uio_oe[1]" 28 9446 44952 9506 45152 m4
+port "uio_oe[0]" 27 9998 44952 10058 45152 m4
+port "VGND" 52 800 1000 1200 44152 m4
+port "uio_out[7]" 42 10550 44952 10610 45152 m4
+port "uio_out[6]" 41 11102 44952 11162 45152 m4
+port "uio_out[5]" 40 11654 44952 11714 45152 m4
+port "uio_out[4]" 39 12206 44952 12266 45152 m4
+port "uio_out[3]" 38 12758 44952 12818 45152 m4
+port "uio_out[2]" 37 13310 44952 13370 45152 m4
+port "uio_oe[7]" 34 6134 44952 6194 45152 m4
+port "uio_oe[6]" 33 6686 44952 6746 45152 m4
+port "uio_oe[5]" 32 7238 44952 7298 45152 m4
+port "uio_oe[4]" 31 7790 44952 7850 45152 m4
+port "uio_oe[3]" 30 8342 44952 8402 45152 m4
+port "uio_oe[2]" 29 8894 44952 8954 45152 m4
+port "uio_out[7]" 42 10550 44952 10610 45152 m4
+port "uio_out[6]" 41 11102 44952 11162 45152 m4
+port "uio_out[5]" 40 11654 44952 11714 45152 m4
+port "uio_out[4]" 39 12206 44952 12266 45152 m4
+port "uio_out[3]" 38 12758 44952 12818 45152 m4
+port "uio_out[2]" 37 13310 44952 13370 45152 m4
+port "uio_oe[7]" 34 6134 44952 6194 45152 m4
+port "uio_oe[6]" 33 6686 44952 6746 45152 m4
+port "uio_oe[5]" 32 7238 44952 7298 45152 m4
+port "uio_oe[4]" 31 7790 44952 7850 45152 m4
+port "uio_oe[3]" 30 8342 44952 8402 45152 m4
+port "uio_oe[2]" 29 8894 44952 8954 45152 m4
+port "ua[0]" 3 30362 0 30542 200 m4
+port "ua[0]" 3 30362 0 30542 200 m4
+node "ua[3]" 0 0 18770 0 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "ua[4]" 0 0 14906 0 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "ua[5]" 0 0 11042 0 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "ua[6]" 0 0 7178 0 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "ua[7]" 0 0 3314 0 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "ena" 0 0 29318 44952 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "rst_n" 0 0 28214 44952 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "ui_in[1]" 0 0 27110 44952 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "ui_in[2]" 0 0 26558 44952 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "ui_in[3]" 0 0 26006 44952 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "ui_in[4]" 0 0 25454 44952 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "ui_in[5]" 0 0 24902 44952 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "ui_in[6]" 0 0 24350 44952 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "ui_in[7]" 0 0 23798 44952 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "uio_in[0]" 0 0 23246 44952 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "uio_in[1]" 0 0 22694 44952 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "uio_in[2]" 0 0 22142 44952 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "uio_in[3]" 0 0 21590 44952 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "uio_in[4]" 0 0 21038 44952 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "uio_in[5]" 0 0 20486 44952 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "uio_in[6]" 0 0 19934 44952 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "uio_in[7]" 0 0 19382 44952 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "ua[1]" 0 0 26498 0 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "ua[2]" 0 0 22634 0 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m2_61176_20370#" 0 0 61176 20370 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m2_56374_20370#" 0 0 56374 20370 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m2_32364_24970#" 0 0 32364 24970 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m2_27562_24970#" 0 0 27562 24970 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m2_22760_24970#" 0 0 22760 24970 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m2_65150_25380#" 0 0 65150 25380 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "clk" 0 0 28766 44952 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "uo_out[0]" 0 0 18830 44952 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "uo_out[1]" 0 0 18278 44952 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "uo_out[2]" 0 0 17726 44952 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "uo_out[3]" 0 0 17174 44952 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "uo_out[4]" 0 0 16622 44952 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "uo_out[5]" 0 0 16070 44952 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "uo_out[6]" 0 0 15518 44952 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "uo_out[7]" 0 0 14966 44952 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "uio_out[0]" 0 0 14414 44952 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "uio_out[1]" 0 0 13862 44952 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "ui_in[0]" 0 0 27662 44952 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "VDPWR" 0 0 200 1000 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+equiv "VDPWR" "uio_oe[1]"
+equiv "VDPWR" "uio_oe[0]"
+equiv "VDPWR" "uio_oe[1]"
+equiv "VDPWR" "uio_oe[0]"
+node "m1_19429_8250#" 0 0 19429 8250 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_16202_6989#" 0 0 16202 6989 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_14717_6989#" 0 0 14717 6989 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "VGND" 0 0 800 1000 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+equiv "VGND" "uio_out[7]"
+equiv "VGND" "uio_out[6]"
+equiv "VGND" "uio_out[5]"
+equiv "VGND" "uio_out[4]"
+equiv "VGND" "uio_out[3]"
+equiv "VGND" "uio_out[2]"
+equiv "VGND" "uio_oe[7]"
+equiv "VGND" "uio_oe[6]"
+equiv "VGND" "uio_oe[5]"
+equiv "VGND" "uio_oe[4]"
+equiv "VGND" "uio_oe[3]"
+equiv "VGND" "uio_oe[2]"
+equiv "VGND" "uio_out[7]"
+equiv "VGND" "uio_out[6]"
+equiv "VGND" "uio_out[5]"
+equiv "VGND" "uio_out[4]"
+equiv "VGND" "uio_out[3]"
+equiv "VGND" "uio_out[2]"
+equiv "VGND" "uio_oe[7]"
+equiv "VGND" "uio_oe[6]"
+equiv "VGND" "uio_oe[5]"
+equiv "VGND" "uio_oe[4]"
+equiv "VGND" "uio_oe[3]"
+equiv "VGND" "uio_oe[2]"
+node "m1_8465_7470#" 0 0 8465 7470 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_12701_7984#" 0 0 12701 7984 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_18727_13980#" 0 0 18727 13980 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_10786_14090#" 0 0 10786 14090 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_5218_14072#" 0 0 5218 14072 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_16623_14220#" 0 0 16623 14220 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_64132_18630#" 0 0 64132 18630 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_62376_18764#" 0 0 62376 18764 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_61166_23680#" 0 0 61166 23680 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_60966_21880#" 0 0 60966 21880 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_59330_18630#" 0 0 59330 18630 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_57574_18804#" 0 0 57574 18804 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_56364_23880#" 0 0 56364 23880 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_56164_22080#" 0 0 56164 22080 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_54538_18630#" 0 0 54538 18630 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_52782_18764#" 0 0 52782 18764 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_51562_20480#" 0 0 51562 20480 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_51562_24080#" 0 0 51562 24080 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_51362_22280#" 0 0 51362 22280 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_49727_18673#" 0 0 49727 18673 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_47971_18804#" 0 0 47971 18804 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_46760_24280#" 0 0 46760 24280 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_46560_22480#" 0 0 46560 22480 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_44924_18653#" 0 0 44924 18653 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_43168_18644#" 0 0 43168 18644 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_41958_20880#" 0 0 41958 20880 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_41958_24480#" 0 0 41958 24480 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_41758_22680#" 0 0 41758 22680 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_40122_18673#" 0 0 40122 18673 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_38366_18744#" 0 0 38366 18744 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_37156_21080#" 0 0 37156 21080 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_37156_24680#" 0 0 37156 24680 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_36956_22880#" 0 0 36956 22880 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_35320_18613#" 0 0 35320 18613 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_33564_18684#" 0 0 33564 18684 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_32354_21280#" 0 0 32354 21280 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_32154_23080#" 0 0 32154 23080 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_30518_18630#" 0 0 30518 18630 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_28762_18664#" 0 0 28762 18664 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_27552_21480#" 0 0 27552 21480 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_27352_23280#" 0 0 27352 23280 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_25716_18593#" 0 0 25716 18593 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_23960_18884#" 0 0 23960 18884 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_22750_21680#" 0 0 22750 21680 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_22550_23480#" 0 0 22550 23480 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "ua[0]" 0 0 30362 0 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_46770_20680#" 0 0 46770 20680 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_17430_1606#" 0 0 17430 1606 pw 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_12795_1601#" 0 0 12795 1601 pw 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "single_9b_cdac_0/cdac_sw_9b_0/cdac_sw_3_0/dac_sw_3_0/VSS" "single_9b_cdac_0/cdac_sw_9b_0/cdac_sw_3_0/VSSA" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "single_9b_cdac_0/cdac_sw_9b_0/cdac_sw_3_0/VSSA" "single_9b_cdac_1/cdac_sw_9b_0/cdac_sw_3_0/nooverlap_clk_0/x12/VGND"
+merge "single_9b_cdac_1/cdac_sw_9b_0/cdac_sw_3_0/nooverlap_clk_0/x12/VGND" "single_9b_cdac_1/cdac_sw_9b_0/cdac_sw_3_0/dac_sw_3_0/VSS"
+merge "single_9b_cdac_1/cdac_sw_9b_0/cdac_sw_3_0/dac_sw_3_0/VSS" "single_9b_cdac_1/cdac_sw_9b_0/cdac_sw_3_0/VSSA"
+merge "single_9b_cdac_1/cdac_sw_9b_0/cdac_sw_3_0/VSSA" "m1_54538_18630#"
+merge "sar9b_0/SWN[6]" "single_9b_cdac_0/SW[6]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "single_9b_cdac_0/SW[6]" "single_9b_cdac_0/cdac_sw_9b_0/SW_IN[6]"
+merge "single_9b_cdac_0/cdac_sw_9b_0/SW_IN[6]" "m2_32364_24970#"
+merge "single_9b_cdac_0/VSUBS" "sar9b_0/VSUBS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sar9b_0/VSUBS" "tdc_0/VSUBS"
+merge "tdc_0/VSUBS" "th_dif_sw_0/VSUBS"
+merge "th_dif_sw_0/VSUBS" "single_9b_cdac_1/VSUBS"
+merge "single_9b_cdac_1/VSUBS" "VSUBS"
+merge "sar9b_0/SWN[4]" "single_9b_cdac_0/cdac_sw_9b_0/SW_IN[4]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "single_9b_cdac_0/cdac_sw_9b_0/SW_IN[4]" "single_9b_cdac_0/SW[4]"
+merge "single_9b_cdac_0/SW[4]" "m1_41958_24480#"
+merge "sar9b_0/VPWR" "single_9b_cdac_0/cdac_sw_9b_0/cdac_sw_3_8/dac_sw_3_0/VDD" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "single_9b_cdac_0/cdac_sw_9b_0/cdac_sw_3_8/dac_sw_3_0/VDD" "single_9b_cdac_0/cdac_sw_9b_0/cdac_sw_3_8/tg_sw_3_1/VDD"
+merge "single_9b_cdac_0/cdac_sw_9b_0/cdac_sw_3_8/tg_sw_3_1/VDD" "single_9b_cdac_1/cdac_sw_9b_0/cdac_sw_3_8/VDDA"
+merge "single_9b_cdac_1/cdac_sw_9b_0/cdac_sw_3_8/VDDA" "m1_23960_18884#"
+merge "m1_23960_18884#" "single_9b_cdac_0/cdac_sw_9b_0/cdac_sw_3_8/VDDA"
+merge "single_9b_cdac_0/cdac_sw_9b_0/cdac_sw_3_8/VDDA" "tdc_0/VDD"
+merge "tdc_0/VDD" "th_dif_sw_0/th_sw_1/bootstrap_0/VDD"
+merge "th_dif_sw_0/th_sw_1/bootstrap_0/VDD" "VDPWR"
+merge "single_9b_cdac_0/cdac_sw_9b_0/cdac_sw_3_5/dac_sw_3_0/VDD" "single_9b_cdac_0/cdac_sw_9b_0/cdac_sw_3_5/VDDA" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "single_9b_cdac_0/cdac_sw_9b_0/cdac_sw_3_5/VDDA" "single_9b_cdac_1/cdac_sw_9b_0/cdac_sw_3_5/VDDA"
+merge "single_9b_cdac_1/cdac_sw_9b_0/cdac_sw_3_5/VDDA" "m1_38366_18744#"
+merge "sar9b_0/SWN[5]" "single_9b_cdac_0/cdac_sw_9b_0/SW_IN[5]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "single_9b_cdac_0/cdac_sw_9b_0/SW_IN[5]" "single_9b_cdac_0/SW[5]"
+merge "single_9b_cdac_0/SW[5]" "m1_37156_24680#"
+merge "sar9b_0/SWN[3]" "single_9b_cdac_0/cdac_sw_9b_0/SW_IN[3]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "single_9b_cdac_0/cdac_sw_9b_0/SW_IN[3]" "single_9b_cdac_0/SW[3]"
+merge "single_9b_cdac_0/SW[3]" "m1_46760_24280#"
+merge "th_dif_sw_0/w_17147_3908#" "w_12795_1601#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sar9b_0/CLK" "tdc_0/CLK" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "tdc_0/CLK" "clk"
+merge "single_9b_cdac_0/cdac_sw_9b_0/cdac_sw_3_3/nooverlap_clk_0/x12/VGND" "single_9b_cdac_0/cdac_sw_9b_0/cdac_sw_3_3/dac_sw_3_0/VSS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "single_9b_cdac_0/cdac_sw_9b_0/cdac_sw_3_3/dac_sw_3_0/VSS" "single_9b_cdac_0/cdac_sw_9b_0/cdac_sw_3_3/VSSA"
+merge "single_9b_cdac_0/cdac_sw_9b_0/cdac_sw_3_3/VSSA" "single_9b_cdac_1/cdac_sw_9b_0/cdac_sw_3_3/dac_sw_3_0/VSS"
+merge "single_9b_cdac_1/cdac_sw_9b_0/cdac_sw_3_3/dac_sw_3_0/VSS" "single_9b_cdac_1/cdac_sw_9b_0/cdac_sw_3_3/VSSA"
+merge "single_9b_cdac_1/cdac_sw_9b_0/cdac_sw_3_3/VSSA" "m1_44924_18653#"
+merge "sar9b_0/SWN[2]" "single_9b_cdac_0/cdac_sw_9b_0/SW_IN[2]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "single_9b_cdac_0/cdac_sw_9b_0/SW_IN[2]" "single_9b_cdac_0/SW[2]"
+merge "single_9b_cdac_0/SW[2]" "m1_51562_24080#"
+merge "single_9b_cdac_1/cdac_sw_9b_0/SW_IN[8]" "single_9b_cdac_1/SW[8]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "single_9b_cdac_1/SW[8]" "sar9b_0/SWP[8]"
+merge "sar9b_0/SWP[8]" "m1_22750_21680#"
+merge "tdc_0/VINP" "th_dif_sw_0/VCP" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "th_dif_sw_0/VCP" "m1_14717_6989#"
+merge "m1_14717_6989#" "single_9b_cdac_1/cap_array_9b_0/m4_n48444_704#"
+merge "single_9b_cdac_1/cap_array_9b_0/m4_n48444_704#" "m1_12701_7984#"
+merge "single_9b_cdac_0/cdac_sw_9b_0/CF[0]" "single_9b_cdac_0/CF[0]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "single_9b_cdac_0/CF[0]" "single_9b_cdac_1/cdac_sw_9b_0/CF[0]"
+merge "single_9b_cdac_1/cdac_sw_9b_0/CF[0]" "single_9b_cdac_1/CF[0]"
+merge "single_9b_cdac_1/CF[0]" "sar9b_0/CF[0]"
+merge "sar9b_0/CF[0]" "m1_60966_21880#"
+merge "tdc_0/OUTN" "sar9b_0/CMP_N" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sar9b_0/CMP_N" "m1_16623_14220#"
+merge "single_9b_cdac_1/cdac_sw_9b_0/SW_IN[7]" "single_9b_cdac_1/SW[7]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "single_9b_cdac_1/SW[7]" "sar9b_0/SWP[7]"
+merge "sar9b_0/SWP[7]" "m1_27552_21480#"
+merge "single_9b_cdac_0/cap_array_9b_0/m4_n48444_704#" "tdc_0/VINN" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "tdc_0/VINN" "th_dif_sw_0/VCN"
+merge "th_dif_sw_0/VCN" "m1_19429_8250#"
+merge "m1_19429_8250#" "m1_16202_6989#"
+merge "sar9b_0/SWN[1]" "single_9b_cdac_0/cdac_sw_9b_0/SW_IN[1]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "single_9b_cdac_0/cdac_sw_9b_0/SW_IN[1]" "single_9b_cdac_0/SW[1]"
+merge "single_9b_cdac_0/SW[1]" "m1_56364_23880#"
+merge "sar9b_0/SWN[8]" "single_9b_cdac_0/SW[8]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "single_9b_cdac_0/SW[8]" "m2_22760_24970#"
+merge "single_9b_cdac_0/cdac_sw_9b_0/CF[8]" "single_9b_cdac_0/CF[8]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "single_9b_cdac_0/CF[8]" "sar9b_0/CF[8]"
+merge "sar9b_0/CF[8]" "single_9b_cdac_1/cdac_sw_9b_0/CF[8]"
+merge "single_9b_cdac_1/cdac_sw_9b_0/CF[8]" "single_9b_cdac_1/CF[8]"
+merge "single_9b_cdac_1/CF[8]" "m1_22550_23480#"
+merge "single_9b_cdac_0/cdac_sw_9b_0/cdac_sw_3_6/nooverlap_clk_0/VSS" "single_9b_cdac_0/cdac_sw_9b_0/cdac_sw_3_6/nooverlap_clk_0/x12/VGND" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "single_9b_cdac_0/cdac_sw_9b_0/cdac_sw_3_6/nooverlap_clk_0/x12/VGND" "single_9b_cdac_0/cdac_sw_9b_0/cdac_sw_3_6/dac_sw_3_0/VSS"
+merge "single_9b_cdac_0/cdac_sw_9b_0/cdac_sw_3_6/dac_sw_3_0/VSS" "single_9b_cdac_1/cdac_sw_9b_0/cdac_sw_3_6/nooverlap_clk_0/x12/VGND"
+merge "single_9b_cdac_1/cdac_sw_9b_0/cdac_sw_3_6/nooverlap_clk_0/x12/VGND" "single_9b_cdac_1/cdac_sw_9b_0/cdac_sw_3_6/dac_sw_3_0/VSS"
+merge "single_9b_cdac_1/cdac_sw_9b_0/cdac_sw_3_6/dac_sw_3_0/VSS" "m1_35320_18613#"
+merge "sar9b_0/CKO" "uo_out[0]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "single_9b_cdac_0/cdac_sw_9b_0/cdac_sw_3_5/nooverlap_clk_0/x12/VGND" "single_9b_cdac_0/cdac_sw_9b_0/cdac_sw_3_5/dac_sw_3_0/VSS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "single_9b_cdac_0/cdac_sw_9b_0/cdac_sw_3_5/dac_sw_3_0/VSS" "single_9b_cdac_1/cdac_sw_9b_0/cdac_sw_3_5/dac_sw_3_0/VSS"
+merge "single_9b_cdac_1/cdac_sw_9b_0/cdac_sw_3_5/dac_sw_3_0/VSS" "single_9b_cdac_1/cdac_sw_9b_0/cdac_sw_3_5/VSSA"
+merge "single_9b_cdac_1/cdac_sw_9b_0/cdac_sw_3_5/VSSA" "m1_40122_18673#"
+merge "sar9b_0/SWN[0]" "single_9b_cdac_0/cdac_sw_9b_0/SW_IN[0]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "single_9b_cdac_0/cdac_sw_9b_0/SW_IN[0]" "single_9b_cdac_0/SW[0]"
+merge "single_9b_cdac_0/SW[0]" "m1_61166_23680#"
+merge "single_9b_cdac_1/cdac_sw_9b_0/SW_IN[6]" "single_9b_cdac_1/SW[6]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "single_9b_cdac_1/SW[6]" "sar9b_0/SWP[6]"
+merge "sar9b_0/SWP[6]" "m1_32354_21280#"
+merge "sar9b_0/SWN[7]" "single_9b_cdac_0/SW[7]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "single_9b_cdac_0/SW[7]" "m2_27562_24970#"
+merge "single_9b_cdac_0/cdac_sw_9b_0/CF[7]" "single_9b_cdac_0/CF[7]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "single_9b_cdac_0/CF[7]" "sar9b_0/CF[7]"
+merge "sar9b_0/CF[7]" "single_9b_cdac_1/cdac_sw_9b_0/CF[7]"
+merge "single_9b_cdac_1/cdac_sw_9b_0/CF[7]" "single_9b_cdac_1/CF[7]"
+merge "single_9b_cdac_1/CF[7]" "m1_27352_23280#"
+merge "sar9b_0/CKSB" "th_dif_sw_0/sky130_fd_sc_hs__buf_16_0/A" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "th_dif_sw_0/sky130_fd_sc_hs__buf_16_0/A" "m1_18727_13980#"
+merge "single_9b_cdac_0/cdac_sw_9b_0/cdac_sw_3_1/VDDA" "single_9b_cdac_1/cdac_sw_9b_0/cdac_sw_3_1/VDDA" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "single_9b_cdac_1/cdac_sw_9b_0/cdac_sw_3_1/VDDA" "m1_57574_18804#"
+merge "tdc_0/OUTP" "sar9b_0/CMP_P" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sar9b_0/CMP_P" "m1_10786_14090#"
+merge "single_9b_cdac_1/cdac_sw_9b_0/SW_IN[5]" "single_9b_cdac_1/SW[5]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "single_9b_cdac_1/SW[5]" "sar9b_0/SWP[5]"
+merge "sar9b_0/SWP[5]" "m1_37156_21080#"
+merge "single_9b_cdac_0/cdac_sw_9b_0/CF[6]" "single_9b_cdac_0/CF[6]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "single_9b_cdac_0/CF[6]" "sar9b_0/CF[6]"
+merge "sar9b_0/CF[6]" "single_9b_cdac_1/cdac_sw_9b_0/CF[6]"
+merge "single_9b_cdac_1/cdac_sw_9b_0/CF[6]" "single_9b_cdac_1/CF[6]"
+merge "single_9b_cdac_1/CF[6]" "m1_32154_23080#"
+merge "single_9b_cdac_0/cdac_sw_9b_0/cdac_sw_3_1/dac_sw_3_0/VSS" "single_9b_cdac_0/cdac_sw_9b_0/cdac_sw_3_1/VSSA" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "single_9b_cdac_0/cdac_sw_9b_0/cdac_sw_3_1/VSSA" "single_9b_cdac_1/cdac_sw_9b_0/cdac_sw_3_1/nooverlap_clk_0/x12/VGND"
+merge "single_9b_cdac_1/cdac_sw_9b_0/cdac_sw_3_1/nooverlap_clk_0/x12/VGND" "single_9b_cdac_1/cdac_sw_9b_0/cdac_sw_3_1/dac_sw_3_0/VSS"
+merge "single_9b_cdac_1/cdac_sw_9b_0/cdac_sw_3_1/dac_sw_3_0/VSS" "single_9b_cdac_1/cdac_sw_9b_0/cdac_sw_3_1/VSSA"
+merge "single_9b_cdac_1/cdac_sw_9b_0/cdac_sw_3_1/VSSA" "m1_59330_18630#"
+merge "single_9b_cdac_1/cdac_sw_9b_0/SW_IN[4]" "single_9b_cdac_1/SW[4]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "single_9b_cdac_1/SW[4]" "sar9b_0/SWP[4]"
+merge "sar9b_0/SWP[4]" "m1_41958_20880#"
+merge "single_9b_cdac_0/cdac_sw_9b_0/cdac_sw_3_6/dac_sw_3_0/VDD" "single_9b_cdac_0/cdac_sw_9b_0/cdac_sw_3_6/VDDA" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "single_9b_cdac_0/cdac_sw_9b_0/cdac_sw_3_6/VDDA" "single_9b_cdac_1/cdac_sw_9b_0/cdac_sw_3_6/VDDA"
+merge "single_9b_cdac_1/cdac_sw_9b_0/cdac_sw_3_6/VDDA" "m1_33564_18684#"
+merge "single_9b_cdac_0/cdac_sw_9b_0/CF[5]" "single_9b_cdac_0/CF[5]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "single_9b_cdac_0/CF[5]" "sar9b_0/CF[5]"
+merge "sar9b_0/CF[5]" "single_9b_cdac_1/cdac_sw_9b_0/CF[5]"
+merge "single_9b_cdac_1/cdac_sw_9b_0/CF[5]" "single_9b_cdac_1/CF[5]"
+merge "single_9b_cdac_1/CF[5]" "m1_36956_22880#"
+merge "single_9b_cdac_0/cdac_sw_9b_0/VCM" "single_9b_cdac_1/cdac_sw_9b_0/cdac_sw_3_2/VCM" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "single_9b_cdac_1/cdac_sw_9b_0/cdac_sw_3_2/VCM" "m2_65150_25380#"
+merge "single_9b_cdac_0/cdac_sw_9b_0/cdac_sw_3_7/nooverlap_clk_0/x12/VGND" "single_9b_cdac_0/cdac_sw_9b_0/cdac_sw_3_7/dac_sw_3_0/VSS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "single_9b_cdac_0/cdac_sw_9b_0/cdac_sw_3_7/dac_sw_3_0/VSS" "single_9b_cdac_1/cdac_sw_9b_0/cdac_sw_3_7/nooverlap_clk_0/x12/VGND"
+merge "single_9b_cdac_1/cdac_sw_9b_0/cdac_sw_3_7/nooverlap_clk_0/x12/VGND" "single_9b_cdac_1/cdac_sw_9b_0/cdac_sw_3_7/dac_sw_3_0/VSS"
+merge "single_9b_cdac_1/cdac_sw_9b_0/cdac_sw_3_7/dac_sw_3_0/VSS" "single_9b_cdac_1/cdac_sw_9b_0/cdac_sw_3_7/VSSA"
+merge "single_9b_cdac_1/cdac_sw_9b_0/cdac_sw_3_7/VSSA" "m1_30518_18630#"
+merge "single_9b_cdac_1/cdac_sw_9b_0/SW_IN[3]" "single_9b_cdac_1/SW[3]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "single_9b_cdac_1/SW[3]" "sar9b_0/SWP[3]"
+merge "sar9b_0/SWP[3]" "li_46770_20680#"
+merge "single_9b_cdac_0/cdac_sw_9b_0/CF[4]" "single_9b_cdac_0/CF[4]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "single_9b_cdac_0/CF[4]" "sar9b_0/CF[4]"
+merge "sar9b_0/CF[4]" "single_9b_cdac_1/cdac_sw_9b_0/CF[4]"
+merge "single_9b_cdac_1/cdac_sw_9b_0/CF[4]" "single_9b_cdac_1/CF[4]"
+merge "single_9b_cdac_1/CF[4]" "m1_41758_22680#"
+merge "single_9b_cdac_0/cdac_sw_9b_0/cdac_sw_3_4/dac_sw_3_0/VDD" "single_9b_cdac_0/cdac_sw_9b_0/cdac_sw_3_4/VDDA" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "single_9b_cdac_0/cdac_sw_9b_0/cdac_sw_3_4/VDDA" "single_9b_cdac_1/cdac_sw_9b_0/cdac_sw_3_4/VDDA"
+merge "single_9b_cdac_1/cdac_sw_9b_0/cdac_sw_3_4/VDDA" "m1_47971_18804#"
+merge "sar9b_0/CKS" "th_dif_sw_0/CK" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "th_dif_sw_0/CK" "m1_8465_7470#"
+merge "single_9b_cdac_1/cdac_sw_9b_0/SW_IN[2]" "single_9b_cdac_1/SW[2]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "single_9b_cdac_1/SW[2]" "sar9b_0/SWP[2]"
+merge "sar9b_0/SWP[2]" "m1_51562_20480#"
+merge "single_9b_cdac_0/cdac_sw_9b_0/CF[3]" "single_9b_cdac_0/CF[3]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "single_9b_cdac_0/CF[3]" "sar9b_0/CF[3]"
+merge "sar9b_0/CF[3]" "single_9b_cdac_1/cdac_sw_9b_0/CF[3]"
+merge "single_9b_cdac_1/cdac_sw_9b_0/CF[3]" "single_9b_cdac_1/CF[3]"
+merge "single_9b_cdac_1/CF[3]" "m1_46560_22480#"
+merge "single_9b_cdac_0/cdac_sw_9b_0/cdac_sw_3_2/dac_sw_3_0/VDD" "single_9b_cdac_0/cdac_sw_9b_0/cdac_sw_3_2/VDDA" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "single_9b_cdac_0/cdac_sw_9b_0/cdac_sw_3_2/VDDA" "single_9b_cdac_1/cdac_sw_9b_0/cdac_sw_3_2/VDDA"
+merge "single_9b_cdac_1/cdac_sw_9b_0/cdac_sw_3_2/VDDA" "m1_62376_18764#"
+merge "single_9b_cdac_0/cdac_sw_9b_0/cdac_sw_3_2/VSSA" "single_9b_cdac_1/cdac_sw_9b_0/cdac_sw_3_2/nooverlap_clk_0/x12/VGND" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "single_9b_cdac_1/cdac_sw_9b_0/cdac_sw_3_2/nooverlap_clk_0/x12/VGND" "single_9b_cdac_1/cdac_sw_9b_0/cdac_sw_3_2/dac_sw_3_0/VSS"
+merge "single_9b_cdac_1/cdac_sw_9b_0/cdac_sw_3_2/dac_sw_3_0/VSS" "single_9b_cdac_1/cdac_sw_9b_0/cdac_sw_3_2/VSSA"
+merge "single_9b_cdac_1/cdac_sw_9b_0/cdac_sw_3_2/VSSA" "m1_64132_18630#"
+merge "sar9b_0/DATA[2]" "uo_out[7]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "single_9b_cdac_1/SW[1]" "sar9b_0/SWP[1]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sar9b_0/SWP[1]" "m2_56374_20370#"
+merge "single_9b_cdac_0/m1_30166_n31024#" "single_9b_cdac_1/m1_30166_n31024#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "single_9b_cdac_1/m1_30166_n31024#" "ua[0]"
+merge "single_9b_cdac_0/cdac_sw_9b_0/CF[2]" "single_9b_cdac_0/CF[2]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "single_9b_cdac_0/CF[2]" "sar9b_0/CF[2]"
+merge "sar9b_0/CF[2]" "single_9b_cdac_1/cdac_sw_9b_0/CF[2]"
+merge "single_9b_cdac_1/cdac_sw_9b_0/CF[2]" "single_9b_cdac_1/CF[2]"
+merge "single_9b_cdac_1/CF[2]" "m1_51362_22280#"
+merge "th_dif_sw_0/th_sw_0/IN" "th_dif_sw_0/VIN" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "th_dif_sw_0/VIN" "ua[1]"
+merge "sar9b_0/DATA[3]" "uo_out[6]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "single_9b_cdac_1/cdac_sw_9b_0/cdac_sw_3_8/VSSA" "sar9b_0/VGND" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sar9b_0/VGND" "sar9b_0/FILLER_0_0_38/VGND"
+merge "sar9b_0/FILLER_0_0_38/VGND" "tdc_0/VSS"
+merge "tdc_0/VSS" "th_dif_sw_0/th_sw_1/bootstrap_0/VSS"
+merge "th_dif_sw_0/th_sw_1/bootstrap_0/VSS" "VGND"
+merge "single_9b_cdac_1/SW[0]" "sar9b_0/SWP[0]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sar9b_0/SWP[0]" "m2_61176_20370#"
+merge "single_9b_cdac_0/cdac_sw_9b_0/cdac_sw_3_7/dac_sw_3_0/VDD" "single_9b_cdac_0/cdac_sw_9b_0/cdac_sw_3_7/VDDA" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "single_9b_cdac_0/cdac_sw_9b_0/cdac_sw_3_7/VDDA" "single_9b_cdac_1/cdac_sw_9b_0/cdac_sw_3_7/dac_sw_3_0/VDD"
+merge "single_9b_cdac_1/cdac_sw_9b_0/cdac_sw_3_7/dac_sw_3_0/VDD" "single_9b_cdac_1/cdac_sw_9b_0/cdac_sw_3_7/VDDA"
+merge "single_9b_cdac_1/cdac_sw_9b_0/cdac_sw_3_7/VDDA" "m1_28762_18664#"
+merge "single_9b_cdac_0/cdac_sw_9b_0/CF[1]" "single_9b_cdac_0/CF[1]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "single_9b_cdac_0/CF[1]" "single_9b_cdac_1/cdac_sw_9b_0/CF[1]"
+merge "single_9b_cdac_1/cdac_sw_9b_0/CF[1]" "single_9b_cdac_1/CF[1]"
+merge "single_9b_cdac_1/CF[1]" "sar9b_0/CF[1]"
+merge "sar9b_0/CF[1]" "m1_56164_22080#"
+merge "sar9b_0/DATA[4]" "uo_out[5]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "single_9b_cdac_0/cdac_sw_9b_0/cdac_sw_3_8/VSSA" "single_9b_cdac_1/cdac_sw_9b_0/cdac_sw_3_8/nooverlap_clk_0/VSS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "single_9b_cdac_1/cdac_sw_9b_0/cdac_sw_3_8/nooverlap_clk_0/VSS" "single_9b_cdac_1/cdac_sw_9b_0/cdac_sw_3_8/nooverlap_clk_0/x12/VGND"
+merge "single_9b_cdac_1/cdac_sw_9b_0/cdac_sw_3_8/nooverlap_clk_0/x12/VGND" "single_9b_cdac_1/cdac_sw_9b_0/cdac_sw_3_8/dac_sw_3_0/VSS"
+merge "single_9b_cdac_1/cdac_sw_9b_0/cdac_sw_3_8/dac_sw_3_0/VSS" "m1_25716_18593#"
+merge "th_dif_sw_0/VIP" "th_dif_sw_0/th_sw_1/IN" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "th_dif_sw_0/th_sw_1/IN" "ua[2]"
+merge "sar9b_0/DATA[5]" "uo_out[4]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sar9b_0/DATA[6]" "uo_out[3]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "single_9b_cdac_0/cdac_sw_9b_0/cdac_sw_3_4/nooverlap_clk_0/x12/VGND" "single_9b_cdac_0/cdac_sw_9b_0/cdac_sw_3_4/dac_sw_3_0/VSS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "single_9b_cdac_0/cdac_sw_9b_0/cdac_sw_3_4/dac_sw_3_0/VSS" "single_9b_cdac_1/cdac_sw_9b_0/cdac_sw_3_4/dac_sw_3_0/VSS"
+merge "single_9b_cdac_1/cdac_sw_9b_0/cdac_sw_3_4/dac_sw_3_0/VSS" "single_9b_cdac_1/cdac_sw_9b_0/cdac_sw_3_4/VSSA"
+merge "single_9b_cdac_1/cdac_sw_9b_0/cdac_sw_3_4/VSSA" "m1_49727_18673#"
+merge "sar9b_0/DATA[7]" "uo_out[2]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sar9b_0/DATA[8]" "uo_out[1]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "tdc_0/RDY" "sar9b_0/RDY" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sar9b_0/RDY" "m1_5218_14072#"
+merge "single_9b_cdac_0/cdac_sw_9b_0/cdac_sw_3_0/dac_sw_3_0/VDD" "single_9b_cdac_0/cdac_sw_9b_0/cdac_sw_3_0/VDDA" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "single_9b_cdac_0/cdac_sw_9b_0/cdac_sw_3_0/VDDA" "single_9b_cdac_1/cdac_sw_9b_0/cdac_sw_3_0/VDDA"
+merge "single_9b_cdac_1/cdac_sw_9b_0/cdac_sw_3_0/VDDA" "m1_52782_18764#"
+merge "sar9b_0/DATA[0]" "uio_out[1]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sar9b_0/DATA[1]" "uio_out[0]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "single_9b_cdac_0/cdac_sw_9b_0/cdac_sw_3_3/dac_sw_3_0/VDD" "single_9b_cdac_0/cdac_sw_9b_0/cdac_sw_3_3/VDDA" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "single_9b_cdac_0/cdac_sw_9b_0/cdac_sw_3_3/VDDA" "single_9b_cdac_1/cdac_sw_9b_0/cdac_sw_3_3/dac_sw_3_0/VDD"
+merge "single_9b_cdac_1/cdac_sw_9b_0/cdac_sw_3_3/dac_sw_3_0/VDD" "single_9b_cdac_1/cdac_sw_9b_0/cdac_sw_3_3/VDDA"
+merge "single_9b_cdac_1/cdac_sw_9b_0/cdac_sw_3_3/VDDA" "m1_43168_18644#"
+merge "sar9b_0/EN" "ui_in[0]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "th_dif_sw_0/w_12524_3915#" "w_17430_1606#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0

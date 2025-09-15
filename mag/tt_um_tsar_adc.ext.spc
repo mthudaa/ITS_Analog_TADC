@@ -105,7 +105,7 @@ XXM1 VDD m1_325_1061# VDD m1_325_1061# VDD m1_325_1061# IN VDD m1_325_1061# VDD 
 XXM3 VSS CK m1_316_183# m1_316_183# m1_316_183# OUT OUT OUT OUT m1_316_183# sky130_fd_pr__nfet_01v8_KT5VMN
 .ends
 
-.subckt cdac_sw_3 DAC_OUT VDDA VCM CKI BI VSSA
+.subckt cdac_sw_3 DAC_OUT VCM CKI BI VDDA VSSA
 Xnooverlap_clk_0 CKI dac_sw_3_0/CK dac_sw_3_0/CKB tg_sw_3_3/SWP tg_sw_3_3/SWN VDDA
 + VSSA nooverlap_clk
 Xtg_sw_3_0 VDDA VSSA DAC_OUT tg_sw_3_3/SWP tg_sw_3_3/SWN DAC_OUT tg_sw_3
@@ -117,56 +117,37 @@ Xdac_sw_3_0 VDDA BI dac_sw_3_0/CKB dac_sw_3_0/CK DAC_OUT VSSA dac_sw_3
 .subckt cdac_sw_9b VCM SW_IN[0] SW_IN[1] SW_IN[2] SW_IN[3] SW_IN[4] SW_IN[5] SW_IN[6]
 + SW_IN[7] SW_IN[8] CF[0] CF[1] CF[2] CF[3] CF[4] CF[5] CF[6] CF[7] CF[8] S[4] S[7]
 + S[2] S[3] S[8] S[1] S[5] S[0] S[6] VSS VDD
-Xcdac_sw_3_0 S[2] VDD VCM CF[2] SW_IN[2] VSS cdac_sw_3
-Xcdac_sw_3_1 S[1] VDD VCM CF[1] SW_IN[1] VSS cdac_sw_3
-Xcdac_sw_3_2 S[0] VDD VCM CF[0] SW_IN[0] VSS cdac_sw_3
-Xcdac_sw_3_3 S[4] VDD VCM CF[4] SW_IN[4] VSS cdac_sw_3
-Xcdac_sw_3_4 S[3] VDD VCM CF[3] SW_IN[3] VSS cdac_sw_3
-Xcdac_sw_3_5 S[5] VDD VCM CF[5] SW_IN[5] VSS cdac_sw_3
-Xcdac_sw_3_6 S[6] VDD VCM CF[6] SW_IN[6] VSS cdac_sw_3
-Xcdac_sw_3_7 S[7] VDD VCM CF[7] SW_IN[7] VSS cdac_sw_3
-Xcdac_sw_3_8 S[8] VDD VCM CF[8] SW_IN[8] VSS cdac_sw_3
+Xcdac_sw_3_0 S[2] VCM CF[2] SW_IN[2] VDD VSS cdac_sw_3
+Xcdac_sw_3_1 S[1] VCM CF[1] SW_IN[1] VDD VSS cdac_sw_3
+Xcdac_sw_3_2 S[0] VCM CF[0] SW_IN[0] VDD VSS cdac_sw_3
+Xcdac_sw_3_3 S[4] VCM CF[4] SW_IN[4] VDD VSS cdac_sw_3
+Xcdac_sw_3_4 S[3] VCM CF[3] SW_IN[3] VDD VSS cdac_sw_3
+Xcdac_sw_3_5 S[5] VCM CF[5] SW_IN[5] VDD VSS cdac_sw_3
+Xcdac_sw_3_6 S[6] VCM CF[6] SW_IN[6] VDD VSS cdac_sw_3
+Xcdac_sw_3_7 S[7] VCM CF[7] SW_IN[7] VDD VSS cdac_sw_3
+Xcdac_sw_3_8 S[8] VCM CF[8] SW_IN[8] VDD VSS cdac_sw_3
 .ends
 
-.subckt sky130_fd_pr__cap_mim_m3_1_NLQ4WR m3_120_n2040# m3_n892_1560# m3_n892_840#
-+ m3_120_1560# m3_n892_3000# m3_120_n3480# m3_120_3000# m3_n892_n4920# m3_n892_n600#
-+ m3_120_n600# m3_n892_4440# m3_120_4440# m3_n892_n1320# c1_160_n5600# m3_n892_120#
-+ c1_n852_n5600# m3_n892_n2760# m3_n892_2280# m3_120_n4920# m3_n892_n4200# m3_120_2280#
-+ m3_n892_n5640# m3_120_n1320# m3_120_840# m3_n892_5160# m3_120_5160# m3_n892_n2040#
-+ m3_120_n2760# m3_120_n4200# m3_n892_3720# m3_n892_n3480# m3_120_3720# m3_120_n5640#
-+ m3_120_120#
-X0 c1_n852_n5600# m3_n892_3720# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
-X1 c1_160_n5600# m3_120_n1320# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
-X2 c1_n852_n5600# m3_n892_n2040# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
-X3 c1_160_n5600# m3_120_n5640# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
-X4 c1_n852_n5600# m3_n892_n4200# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
-X5 c1_160_n5600# m3_120_5160# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
-X6 c1_160_n5600# m3_120_n2040# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
-X7 c1_160_n5600# m3_120_n4200# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
-X8 c1_n852_n5600# m3_n892_n4920# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
-X9 c1_n852_n5600# m3_n892_2280# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
-X10 c1_160_n5600# m3_120_1560# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
-X11 c1_160_n5600# m3_120_n600# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
-X12 c1_160_n5600# m3_120_n4920# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
-X13 c1_160_n5600# m3_120_4440# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
-X14 c1_n852_n5600# m3_n892_n3480# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
-X15 c1_n852_n5600# m3_n892_5160# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
-X16 c1_n852_n5600# m3_n892_1560# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
-X17 c1_160_n5600# m3_120_120# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
-X18 c1_160_n5600# m3_120_n3480# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
-X19 c1_n852_n5600# m3_n892_n600# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
-X20 c1_160_n5600# m3_120_3000# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
-X21 c1_160_n5600# m3_120_840# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
-X22 c1_n852_n5600# m3_n892_4440# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
-X23 c1_160_n5600# m3_120_3720# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
-X24 c1_n852_n5600# m3_n892_n2760# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
-X25 c1_n852_n5600# m3_n892_120# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
-X26 c1_n852_n5600# m3_n892_n5640# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
-X27 c1_n852_n5600# m3_n892_3000# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
-X28 c1_n852_n5600# m3_n892_n1320# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
-X29 c1_160_n5600# m3_120_n2760# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
-X30 c1_160_n5600# m3_120_2280# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
-X31 c1_n852_n5600# m3_n892_840# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+.subckt sky130_fd_pr__cap_mim_m3_1_NL85WR m3_n386_n2760# m3_n386_n4200# m3_n386_1560#
++ m3_n386_n5640# m3_n386_3000# m3_n386_840# m3_n386_n600# m3_n386_n2040# m3_n386_4440#
++ m3_n386_n3480# m3_n386_120# m3_n386_2280# m3_n386_5160# m3_n386_n4920# m3_n386_n1320#
++ m3_n386_3720# c1_n346_n5600#
+X0 c1_n346_n5600# m3_n386_1560# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X1 c1_n346_n5600# m3_n386_n600# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X2 c1_n346_n5600# m3_n386_n1320# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X3 c1_n346_n5600# m3_n386_n5640# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X4 c1_n346_n5600# m3_n386_4440# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X5 c1_n346_n5600# m3_n386_n2040# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X6 c1_n346_n5600# m3_n386_120# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X7 c1_n346_n5600# m3_n386_n4200# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X8 c1_n346_n5600# m3_n386_3000# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X9 c1_n346_n5600# m3_n386_840# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X10 c1_n346_n5600# m3_n386_n4920# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X11 c1_n346_n5600# m3_n386_3720# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X12 c1_n346_n5600# m3_n386_n3480# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X13 c1_n346_n5600# m3_n386_2280# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X14 c1_n346_n5600# m3_n386_5160# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X15 c1_n346_n5600# m3_n386_n2760# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
 .ends
 
 .subckt sky130_fd_pr__cap_mim_m3_1_TE2UD4 m3_n5446_n5640# m3_4674_n5640# c1_n1358_n5600#
@@ -417,24 +398,25 @@ X238 c1_666_n5600# m3_626_n5640# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
 X239 c1_1678_n5600# m3_1638_n5640# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
 .ends
 
-.subckt cap_array_9b S[8] S[7] S[6] S[5] S[4] S[3] S[2] S[1] S[0] VCM m4_n48044_704#
-Xsky130_fd_pr__cap_mim_m3_1_NLQ4WR_0 S[5] S[5] S[6] S[5] S[4] S[4] S[4] S[4] S[7]
-+ S[8] S[4] S[4] S[6] m4_n48044_704# VCM m4_n48044_704# S[5] S[5] S[4] S[4] S[5] S[4]
-+ S[6] S[6] S[4] S[4] S[5] S[5] S[4] S[4] S[4] S[4] S[4] S[7] sky130_fd_pr__cap_mim_m3_1_NLQ4WR
-Xsky130_fd_pr__cap_mim_m3_1_TE2UD4_0 S[0] S[2] m4_n48044_704# S[0] S[0] S[2] S[0]
-+ m4_n48044_704# S[3] S[1] m4_n48044_704# m4_n48044_704# m4_n48044_704# m4_n48044_704#
-+ S[0] m4_n48044_704# S[1] m4_n48044_704# m4_n48044_704# m4_n48044_704# S[0] S[0]
-+ m4_n48044_704# m4_n48044_704# S[1] m4_n48044_704# S[0] m4_n48044_704# S[1] m4_n48044_704#
+.subckt cap_array_9b S[8] S[7] S[6] S[5] S[4] S[3] S[2] S[1] S[0] VCM m4_n48444_704#
+Xsky130_fd_pr__cap_mim_m3_1_NL85WR_0 S[5] S[4] S[5] S[4] S[4] S[6] S[8] S[5] S[4]
++ S[4] S[7] S[5] S[4] S[4] S[6] S[4] m4_n48444_704# sky130_fd_pr__cap_mim_m3_1_NL85WR
+Xsky130_fd_pr__cap_mim_m3_1_NL85WR_1 S[5] S[4] S[5] S[4] S[4] S[6] S[7] S[5] S[4]
++ S[4] VCM S[5] S[4] S[4] S[6] S[4] m4_n48444_704# sky130_fd_pr__cap_mim_m3_1_NL85WR
+Xsky130_fd_pr__cap_mim_m3_1_TE2UD4_0 S[0] S[2] m4_n48444_704# S[0] S[0] S[2] S[0]
++ m4_n48444_704# S[3] S[1] m4_n48444_704# m4_n48444_704# m4_n48444_704# m4_n48444_704#
++ S[0] m4_n48444_704# S[1] m4_n48444_704# m4_n48444_704# m4_n48444_704# S[0] S[0]
++ m4_n48444_704# m4_n48444_704# S[1] m4_n48444_704# S[0] m4_n48444_704# S[1] m4_n48444_704#
 + sky130_fd_pr__cap_mim_m3_1_TE2UD4
-Xsky130_fd_pr__cap_mim_m3_1_TE2UD4_1 S[2] S[0] m4_n48044_704# S[0] S[2] S[0] S[3]
-+ m4_n48044_704# S[0] S[0] m4_n48044_704# m4_n48044_704# m4_n48044_704# m4_n48044_704#
-+ S[1] m4_n48044_704# S[0] m4_n48044_704# m4_n48044_704# m4_n48044_704# S[1] S[1]
-+ m4_n48044_704# m4_n48044_704# S[0] m4_n48044_704# S[1] m4_n48044_704# S[0] m4_n48044_704#
+Xsky130_fd_pr__cap_mim_m3_1_TE2UD4_1 S[2] S[0] m4_n48444_704# S[0] S[2] S[0] S[3]
++ m4_n48444_704# S[0] S[0] m4_n48444_704# m4_n48444_704# m4_n48444_704# m4_n48444_704#
++ S[1] m4_n48444_704# S[0] m4_n48444_704# m4_n48444_704# m4_n48444_704# S[1] S[1]
++ m4_n48444_704# m4_n48444_704# S[0] m4_n48444_704# S[1] m4_n48444_704# S[0] m4_n48444_704#
 + sky130_fd_pr__cap_mim_m3_1_TE2UD4
 .ends
 
 .subckt single_9b_cdac SW[8] CF[8] CF[7] SW[7] CF[6] SW[6] SW[5] CF[5] CF[4] SW[4]
-+ SW[3] CF[3] CF[2] SW[2] SW[1] CF[1] CF[0] SW[0] VC VCM VDD VSS
++ SW[3] CF[3] CF[2] SW[2] SW[1] CF[1] CF[0] SW[0] VCM VC VDD VSS
 Xcdac_sw_9b_0 VCM SW[0] SW[1] SW[2] SW[3] SW[4] SW[5] SW[6] SW[7] SW[8] CF[0] CF[1]
 + CF[2] CF[3] CF[4] CF[5] CF[6] CF[7] CF[8] cdac_sw_9b_0/S[4] cdac_sw_9b_0/S[7] cdac_sw_9b_0/S[2]
 + cdac_sw_9b_0/S[3] cdac_sw_9b_0/S[8] cdac_sw_9b_0/S[1] cdac_sw_9b_0/S[5] cdac_sw_9b_0/S[0]
@@ -1178,11 +1160,11 @@ Xsky130_fd_sc_hs__buf_16_1 VSS VDD VDD th_sw_1/CK VSS CK sky130_fd_sc_hs__buf_16
 Xsingle_9b_cdac_0 sar9b_0/SWN[8] sar9b_0/CF[8] sar9b_0/CF[7] sar9b_0/SWN[7] sar9b_0/CF[6]
 + sar9b_0/SWN[6] sar9b_0/SWN[5] sar9b_0/CF[5] sar9b_0/CF[4] sar9b_0/SWN[4] sar9b_0/SWN[3]
 + sar9b_0/CF[3] sar9b_0/CF[2] sar9b_0/SWN[2] sar9b_0/SWN[1] sar9b_0/CF[1] sar9b_0/CF[0]
-+ sar9b_0/SWN[0] tdc_0/VINN ua[0] VDPWR VGND single_9b_cdac
++ sar9b_0/SWN[0] ua[0] tdc_0/VINN VDPWR VGND single_9b_cdac
 Xsingle_9b_cdac_1 sar9b_0/SWP[8] sar9b_0/CF[8] sar9b_0/CF[7] sar9b_0/SWP[7] sar9b_0/CF[6]
 + sar9b_0/SWP[6] sar9b_0/SWP[5] sar9b_0/CF[5] sar9b_0/CF[4] sar9b_0/SWP[4] sar9b_0/SWP[3]
 + sar9b_0/CF[3] sar9b_0/CF[2] sar9b_0/SWP[2] sar9b_0/SWP[1] sar9b_0/CF[1] sar9b_0/CF[0]
-+ sar9b_0/SWP[0] tdc_0/VINP ua[0] VDPWR VGND single_9b_cdac
++ sar9b_0/SWP[0] ua[0] tdc_0/VINP VDPWR VGND single_9b_cdac
 Xtdc_0 VDPWR tdc_0/VINP tdc_0/VINN tdc_0/RDY tdc_0/OUTP tdc_0/OUTN clk VGND tdc
 Xsar9b_0 sar9b_0/CF[0] sar9b_0/CF[1] sar9b_0/CF[2] sar9b_0/CF[3] sar9b_0/CF[4] sar9b_0/CF[5]
 + sar9b_0/CF[6] sar9b_0/CF[7] sar9b_0/CF[8] uo_out[0] sar9b_0/CKS sar9b_0/CKSB clk
@@ -1191,7 +1173,7 @@ Xsar9b_0 sar9b_0/CF[0] sar9b_0/CF[1] sar9b_0/CF[2] sar9b_0/CF[3] sar9b_0/CF[4] s
 + sar9b_0/SWN[3] sar9b_0/SWN[4] sar9b_0/SWN[5] sar9b_0/SWN[6] sar9b_0/SWN[7] sar9b_0/SWN[8]
 + sar9b_0/SWP[0] sar9b_0/SWP[1] sar9b_0/SWP[2] sar9b_0/SWP[3] sar9b_0/SWP[4] sar9b_0/SWP[5]
 + sar9b_0/SWP[6] sar9b_0/SWP[7] sar9b_0/SWP[8] VDPWR VGND sar9b
-Xth_dif_sw_0 tdc_0/VINN tdc_0/VINP ua[3] ua[4] sar9b_0/CKS sar9b_0/CKSB w_12795_1601#
+Xth_dif_sw_0 tdc_0/VINN tdc_0/VINP ua[1] ua[2] sar9b_0/CKS sar9b_0/CKSB w_12795_1601#
 + w_17430_1606# VGND VDPWR th_dif_sw
 .ends
 
