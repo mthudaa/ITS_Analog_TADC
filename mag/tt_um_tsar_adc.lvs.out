@@ -655,7 +655,7 @@ S[2]                                       |S[2]
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes cdac_sw_9b and cdac_sw_9b are equivalent.
-Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_1_NLQ4WR in circuit cap_array_9b (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_1_NL85WR in circuit cap_array_9b (0)(2 instances)
 Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_1_TE2UD4 in circuit cap_array_9b (0)(2 instances)
 
 Class cap_array_9b (0):  Merged 502 parallel devices.
@@ -673,16 +673,16 @@ Netlists match uniquely.
 Subcircuit pins:
 Circuit 1: cap_array_9b                    |Circuit 2: cap_array_9b                    
 -------------------------------------------|-------------------------------------------
-m4_n48044_704#                             |VC **Mismatch**                            
+m4_n48444_704#                             |VC **Mismatch**                            
 S[1]                                       |S[1]                                       
 S[3]                                       |S[3]                                       
 S[2]                                       |S[2]                                       
 S[0]                                       |S[0]                                       
+S[7]                                       |S[7]                                       
 VCM                                        |VCM                                        
 S[8]                                       |S[8]                                       
-S[7]                                       |S[7]                                       
-S[4]                                       |S[4]                                       
 S[6]                                       |S[6]                                       
+S[4]                                       |S[4]                                       
 S[5]                                       |S[5]                                       
 ---------------------------------------------------------------------------------------
 Cell pin lists for cap_array_9b and cap_array_9b altered to match.
@@ -1900,8 +1900,8 @@ Device classes th_dif_sw and th_dif_sw are equivalent.
 
 Cell tt_um_tsar_adc (0) disconnected node: ena
 Cell tt_um_tsar_adc (0) disconnected node: rst_n
-Cell tt_um_tsar_adc (0) disconnected node: ua[1]
-Cell tt_um_tsar_adc (0) disconnected node: ua[2]
+Cell tt_um_tsar_adc (0) disconnected node: ua[3]
+Cell tt_um_tsar_adc (0) disconnected node: ua[4]
 Cell tt_um_tsar_adc (0) disconnected node: ua[5]
 Cell tt_um_tsar_adc (0) disconnected node: ua[6]
 Cell tt_um_tsar_adc (0) disconnected node: ua[7]
@@ -1935,8 +1935,8 @@ Netlists match uniquely with port errors.
 Subcircuit pins:
 Circuit 1: tt_um_tsar_adc                  |Circuit 2: tt_um_tsar_adc                  
 -------------------------------------------|-------------------------------------------
-ua[4]                                      |ua[4]                                      
-ua[3]                                      |ua[3]                                      
+ua[2]                                      |ua[2]                                      
+ua[1]                                      |ua[1]                                      
 uo_out[0]                                  |uo_out[0]                                  
 uio_out[1]                                 |uio_out[1]                                 
 uio_out[0]                                 |uio_out[0]                                 
@@ -1954,8 +1954,8 @@ clk                                        |clk
 ua[0]                                      |ua[0]                                      
 ena                                        |(no matching pin)                          
 rst_n                                      |(no matching pin)                          
-ua[1]                                      |(no matching pin)                          
-ua[2]                                      |(no matching pin)                          
+ua[3]                                      |(no matching pin)                          
+ua[4]                                      |(no matching pin)                          
 ua[5]                                      |(no matching pin)                          
 ua[6]                                      |(no matching pin)                          
 ua[7]                                      |(no matching pin)                          
